@@ -11,11 +11,10 @@
 Before going on stage, Ali needs:
 
 - [ ] **Claude** — logged in at claude.ai, fresh chat ready, file upload tested
-- [ ] **Gamma.app** — account created, logged in
 - [ ] **Excel file** prepared (Use Case 1 — see Appendix A)
 - [ ] **Engagement brief** in a .txt or .docx (Use Case 2 — see Appendix B)
 - [ ] **This document** open on a second screen or phone for reference
-- [ ] **Browser tabs** pre-opened: Claude (multiple fresh chats), Gamma
+- [ ] **Browser tabs** pre-opened: Claude (multiple fresh chats)
 - [ ] **Timer** visible (phone or laptop widget) — keep yourself honest on pacing
 
 **Note:** All five use cases run on Claude. One tool, one login, one subscription. That's the point — you don't need five different AI accounts.
@@ -300,17 +299,18 @@ Create a professional business card mockup for Aether using the logo and brand c
 Deep research on the UK sustainable packaging market — structured report with market sizing, competitor analysis, key trends, and strategic recommendations. All from a single prompt, then refined.
 
 ### Tool
-**Claude** (claude.ai with web search enabled) — Claude can search the web and provide sourced research. For the audience: **Perplexity** (perplexity.ai) is a great free alternative that's purpose-built for research with citations.
+**Claude** (claude.ai with web search enabled) — Claude can search the web in real time and provide sourced research with inline citations. No separate research tool needed.
 
 ### Prerequisites
-- [ ] Claude logged in, fresh conversation, web search enabled
+- [ ] Claude logged in, fresh conversation
+- [ ] Web search is enabled by default — Claude will automatically search when asked to research
 - [ ] No files needed — researching from scratch
 
 ### Steps
 
 **1. Set the scene (30 sec)**
 
-> **AUDIENCE NOTE:** "Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. Claude can now search the web and cite its sources — every claim links back to a real article, report, or data source. That's what makes it usable for real business decisions. If you want to try this at home for free, Perplexity is another excellent tool that's specifically built for sourced research."
+> **AUDIENCE NOTE:** "Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. Claude can search the web in real time — it pulls from news articles, industry reports, company websites, and cites every claim with a clickable source. That's what makes it usable for real business decisions — not hallucinated numbers, but sourced, verifiable data."
 
 **2. Paste the primary prompt in Claude:**
 
@@ -332,7 +332,7 @@ Cite all statistics and claims with sources. Use the most recent data available.
 
 **3. While AI researches (~60–90 sec — this takes longer because it's searching the web), talk to audience:**
 
-> **AUDIENCE NOTE:** "This is going to take a bit longer than the others because Claude is actually searching the internet in real time — pulling from news articles, industry reports, company websites. Watch the sources it pulls in. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely."
+> **AUDIENCE NOTE:** "This is going to take a bit longer than the others because Claude is actually searching the internet in real time. You can see it pulling sources as it goes — watch the citations appear. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely."
 
 **4. Show the output — scroll through, highlight the cited sources.**
 
@@ -391,23 +391,22 @@ Write a 250-word executive summary of this entire research, suitable for includi
 Take a one-paragraph business idea and produce a complete 12-slide pitch deck with content, speaker notes, and actual designed slides — using Claude for content and Gamma.app for design.
 
 ### Tool
-**Claude** for pitch deck content (strong at structured, persuasive writing) → then **Gamma.app** to turn it into designed slides in one click.
+**Claude** (claude.ai with artifacts) — Claude can create presentation slides directly as interactive artifacts. Content and design in one tool, no need to copy-paste into a separate app.
 
 ### Prerequisites
 - [ ] Business idea paragraph ready (see **Appendix D**)
 - [ ] Claude open with a fresh conversation
-- [ ] Gamma.app logged in and ready (https://gamma.app)
 
 ### Steps
 
 **1. Set the scene (30 sec)**
 
-> **AUDIENCE NOTE:** "Last one — and this is the big finale. We're going to take a one-paragraph business idea and turn it into a complete investor pitch deck. Not just bullet points — actual designed slides. Two AI tools working together: Claude for the content, then Gamma to design it. Let's go."
+> **AUDIENCE NOTE:** "Last one — and this is the big finale. We're going to take a one-paragraph business idea and turn it into a complete investor pitch deck. Not just bullet points — actual designed, interactive slides. Claude can now create presentation artifacts directly — you get styled slides right inside the conversation, no separate tool needed. Let's go."
 
-**2. Paste the primary prompt in Claude:**
+**2. Paste the primary prompt:**
 
 ```
-I need you to create a complete investor pitch deck for the following startup:
+I need you to create a complete investor pitch deck as a presentation artifact for the following startup:
 
 ---
 **Aether** is a B2B SaaS platform that uses networks of low-cost IoT sensors combined with AI-powered analytics to provide real-time, hyperlocal air quality monitoring and forecasting for smart cities. City councils use Aether to identify pollution hotspots, optimise traffic flow to reduce emissions, and provide citizens with real-time air quality data via a public dashboard and mobile app. The platform also serves property developers (air quality scores for new developments) and health services (asthma/respiratory alert systems). Founded in London in 2025, Aether has 3 pilot cities, £1.2M in pre-seed funding, and a founding team of 4 (ex-Dyson engineering lead, ex-DeepMind ML researcher, ex-Capita smart cities PM, and a commercial lead from Octopus Energy).
@@ -433,7 +432,7 @@ For each slide, provide:
 - **Body content** (2-4 bullet points or short paragraphs — deck-appropriate, not essay-length)
 - **Visual suggestion** (what graphic, chart, or image should accompany this slide)
 
-Write in a confident, investor-facing tone. Every slide should tell a story and build towards the ask.
+Create this as a presentation artifact with styled slides I can present directly. Use a clean, professional design with a dark navy/teal colour scheme. Write in a confident, investor-facing tone. Every slide should tell a story and build towards the ask.
 ```
 
 **3. While AI processes (~60 sec), talk to audience:**
@@ -473,26 +472,22 @@ Create the Competitive Landscape slide as a 2x2 matrix. The axes should be:
 Position these competitors: traditional government monitoring (DEFRA), BreezoMeter, Plume Labs, IQAir, and Aether. Aether should be in the top-right quadrant. Explain why for each positioning in a brief note below the matrix.
 ```
 
-**8. Now bring it to life — switch to Gamma.app**
+**8. Show the artifact — click to present it full-screen**
 
-> **AUDIENCE NOTE:** "Now here's the magic moment. We've got all this content from Claude. Let's turn it into actual designed slides in about 30 seconds."
-
-**Open Gamma.app → Click "New" → "Paste in text" → Paste the full Claude output → Click Generate**
-
-> **AUDIENCE NOTE:** "Gamma takes structured text and turns it into designed slides automatically. It picks colours, layouts, adds stock imagery — all from the content we generated. Two AI tools, working in sequence: Claude for brains, Gamma for beauty. In under 7 minutes, we've gone from a one-paragraph idea to a designed pitch deck."
+> **AUDIENCE NOTE:** "And look at that — Claude didn't just give us text. It created a full presentation artifact with styled slides. You can click through them right here, present them full-screen, or download them. No copy-pasting into another tool, no switching between apps. One prompt, one tool, a complete pitch deck. In under 7 minutes, we've gone from a one-paragraph idea to a presentable pitch deck."
 
 ### Expected Output
 - Full 12-slide pitch deck content with headlines, bullets, and visual suggestions
 - Emotionally rewritten problem slide with storytelling
 - Detailed 3-year financial projections table
 - 2x2 competitive landscape matrix
-- Designed slides via Gamma.app (if time allows during live demo)
+- Presentation artifact with styled, presentable slides directly in Claude
 
 ---
 
 ## Transition to Wrap-Up
 
-> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude — plus Gamma for the slides at the end. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
+> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude. One login, one subscription, five completely different business tasks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
 
 ---
 
@@ -631,7 +626,7 @@ and a commercial lead from Octopus Energy).
 | 2 | Contract Drafting | Claude | 7 min |
 | 3 | Brand Identity | Claude (image generation) | 6 min |
 | 4 | Market Research | Claude (web search) | 8 min |
-| 5 | Pitch Deck | Claude + Gamma | 7 min |
+| 5 | Pitch Deck | Claude (artifacts) | 7 min |
 | — | **Total** | — | **~35 min** |
 
 ---
@@ -644,8 +639,8 @@ Things that might go wrong live:
 |---------|-----|
 | Claude is slow/down | Have a backup ChatGPT or Gemini tab open (create free accounts beforehand) |
 | Image generation fails | Have 2-3 pre-generated images saved as backup. Or switch to a text-only brand guidelines demo |
-| Web search doesn't return good sources | Have key stats noted down beforehand. Or mention Perplexity as the alternative and show it |
-| Gamma.app doesn't load | Show the Claude markdown output and say "imagine this as slides" |
+| Web search doesn't return good sources | Have key stats noted down beforehand. Prompt Claude again with more specific search terms |
+| Artifact/slides don't render well | Show the text content and say "the slides are generated right here — let me walk you through the content" |
 | Any tool is completely down | Skip to the next use case, come back if time allows |
 | Internet goes down | Have all prompts saved locally. Show screenshots of expected outputs. |
 
