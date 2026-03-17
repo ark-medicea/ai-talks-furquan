@@ -13,13 +13,10 @@
 |-------|-------|----------|
 | 1 | Title slide | 15s |
 | 2 | "Who's Who in AI" — landscape + model table | 2.5 min |
-| 3 | Key concept: Models vs Tools | 30s |
-| 4 | "What Does It Cost?" — pricing & plans | 2 min |
-| 5 | "What Can AI Actually Do?" — capabilities, MCP, skills | 3 min |
-| 6 | "Putting It All Together" — workflow automation | 2 min |
-| 7 | "AI Beyond Chat" — non-technical tools comparison | 2 min |
-| 8 | "5 Things You'll See Me Do Live" — use cases | 2 min |
-| 9 | Transition to Talk 2 / Q&A buffer | 1 min |
+| 3 | "What Does It Cost?" — pricing & plans | 2 min |
+| 4 | "What Can AI Actually Do?" — capabilities, MCP, skills | 3 min |
+| 5 | "Putting It All Together" — workflow automation | 2 min |
+| 6 | "AI Beyond Chat" — non-technical tools comparison | 2 min |
 
 ---
 
@@ -73,20 +70,7 @@ Each company makes different models for different jobs — like how a car maker 
 
 ---
 
-## SLIDE 3 — The Key Concept
-
-### Models are the engine. Tools are the car.
-
-- The **model** (GPT-5.4, Claude, Gemini) is the intelligence — it understands language, reasons, generates
-- The **tool** (ChatGPT, claude.ai, Gemini app) is how you interact with that intelligence for a specific job
-- Many tools let you swap models — like choosing which engine goes in your car
-- You don't need to understand engines to drive. Same here.
-
-> 🎤 **Speaker note:** "This is the only technical concept I want you to take away. When someone says 'I used ChatGPT' — ChatGPT is the tool, GPT is the model inside it. When someone says 'I used Claude' — Claude is both the model and the tool name. That's it. You now understand the entire architecture."
-
----
-
-## SLIDE 4 — What Does It Cost?
+## SLIDE 3 — What Does It Cost?
 
 > 🎤 **Speaker note:** "The number one question I get: 'Do I have to pay for this?' Short answer — you can do a surprising amount for free, but the paid tiers are where it gets really powerful. Here's the honest breakdown."
 
@@ -96,13 +80,15 @@ Tokens are how AI measures text — roughly **1 token ≈ ¾ of a word**. So 1,0
 
 ### Consumer Plans: Free vs Paid
 
-| Service | Free Tier | What You Get Free | Pro/Paid Tier | Cost/Month | What Pro Adds |
-|---------|-----------|-------------------|---------------|------------|---------------|
-| **Claude** (Anthropic) | ✅ Yes | Sonnet/Haiku with usage limits; basic features | Claude Pro / Max | **$20/mo (~£16)** / Max from **$100/mo** | 5× more usage, Opus 4.6 access, priority, web search, file uploads |
-| **ChatGPT** (OpenAI) | ✅ Yes | GPT-5.x (limited) + GPT-4.1 mini; image gen | ChatGPT Plus / Pro | **$20/mo (~£16)** / **$200/mo** | Full GPT-5.4, GPT-5.4 Thinking, unlimited usage, Deep Research |
-| **Gemini** (Google) | ✅ Yes | Gemini Flash models; integrated into Google apps | Gemini Advanced | **$19.99/mo (~£16)** | Gemini 3.1 Pro, 3 Deep Think, 1M token context, deeper Google integration |
-| **Grok** (xAI) | ✅ Yes (via X) | Basic Grok access on X | X Premium+ | **$22/mo (~£18)** | Full Grok 4.x access, Aurora image gen, no ads |
-| **Perplexity** | ✅ Yes | Limited searches, basic LLM answers | Perplexity Pro | **~$20/mo (~£16)** | Choose backend model (GPT-5.4, Claude 4.6, Gemini 3.1 Pro), Deep Research |
+| Service | Free Tier | What You Get Free | Paid Tier | Cost/Month | What Paid Adds |
+|---------|-----------|-------------------|-----------|------------|----------------|
+| **Claude** (Anthropic) | ✅ Yes | Sonnet/Haiku with usage limits; basic features | Pro | **£16/mo** | 5× more usage, Opus 4.6 access, priority, web search, file uploads, Co-work |
+| | | | Max | **from £80/mo** | Everything in Pro + massive usage limits, extended thinking |
+| **ChatGPT** (OpenAI) | ✅ Yes | GPT-5.x (limited) + GPT-4.1 mini; image gen | Plus | **£16/mo** | Full GPT-5.4, GPT-5.4 Thinking, more usage, Deep Research |
+| | | | Pro | **£160/mo** | Unlimited usage, highest-tier models, voice mode |
+| **Gemini** (Google) | ✅ Yes | Gemini Flash models; integrated into Google apps | Advanced | **£16/mo** | Gemini 3.1 Pro, 3 Deep Think, 1M token context, deeper Google integration |
+| **Grok** (xAI) | ✅ Yes (via X) | Basic Grok access on X | X Premium+ | **£18/mo** | Full Grok 4.x access, Aurora image gen, no ads |
+| **Perplexity** | ✅ Yes | Limited searches, basic LLM answers | Pro | **£16/mo** | Choose backend model (GPT-5.4, Claude 4.6, Gemini 3.1 Pro), Deep Research |
 
 *Prices approximate as of March 2026. All offer annual discounts.*
 
@@ -112,20 +98,21 @@ If you're building apps with AI, you pay per token rather than a monthly subscri
 
 | Model | Input (per 1M tokens) | Output (per 1M tokens) |
 |-------|----------------------|------------------------|
-| Claude Sonnet 4.6 | ~$3 | ~$15 |
-| Claude Opus 4.6 | ~$5 | ~$25 |
-| Gemini 3.1 Flash Lite | ~$0.25 | ~$1.50 |
-| Claude Haiku 4.5 | ~$1 | ~$5 |
+| Claude Sonnet 4.6 | ~£2.40 | ~£12 |
+| Claude Opus 4.6 | ~£4 | ~£20 |
+| Gemini 3.1 Flash Lite | ~£0.20 | ~£1.20 |
+| Claude Haiku 4.5 | ~£0.80 | ~£4 |
 
 *Most people in this room will use the consumer products, not the API — so don't worry about this table. It's here if you're curious.*
 
 ### 💡 Recommendation
 
-**For most business users: Claude Pro at $20/month is the best value.** Here's why:
+**For most business users: Claude Pro at £16/month is the best value.** Here's why:
 - Best-in-class for long documents, contracts, analysis, and writing
 - Web search included
 - Co-work feature for collaborative projects (more on this next)
 - File upload for spreadsheets, PDFs, documents
+- Can generate and export Excel (.xlsx) and PowerPoint (.pptx) files via artifacts
 - Consistently ranks highest for business/professional tasks
 - *Note: Claude does not generate images — for that, use ChatGPT (free tier includes GPT Image)*
 
@@ -135,7 +122,7 @@ ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's e
 
 ---
 
-## SLIDE 5 — What Can AI Actually Do?
+## SLIDE 4 — What Can AI Actually Do?
 
 > 🎤 **Speaker note:** "So we've covered who the players are, what the models do, and what it costs. Now the big question — what can AI actually *do* for your business? I'm going to be really honest here. There are things it's brilliant at, things it's okay at, and things it genuinely can't do yet. Knowing the difference is the most valuable thing I can teach you tonight."
 
@@ -153,30 +140,31 @@ These are areas where AI is already better — or at least faster — than doing
 | **Research** — web search, synthesising sources, citing | Ask a question, get a structured answer with links you can verify | ⭐⭐⭐⭐ Very Good |
 | **Reasoning** — logic, planning, breaking down complex problems | "Here's my situation — what are my options?" AI thinks it through step by step | ⭐⭐⭐⭐ Very Good |
 | **Conversation** — context-aware dialogue, remembering earlier in the chat | It remembers what you said 20 messages ago. Better than most colleagues. | ⭐⭐⭐⭐⭐ Excellent |
+| **File generation** — Excel (.xlsx), PowerPoint (.pptx), PDFs, CSVs | Claude can generate downloadable spreadsheets and presentations via artifacts | ⭐⭐⭐⭐ Very Good |
 
 > 💡 **What this means for you:** If your daily work involves writing, analysing data, or researching — AI is already a game-changer. Start here.
 
-> 🎤 **Speaker note:** "This is where AI earns its keep. If you write emails, read reports, or analyse any kind of data — even occasionally — AI will save you hours every week. Not theoretically. Actually."
+> 🎤 **Speaker note:** "This is where AI earns its keep. If you write emails, read reports, or analyse any kind of data — even occasionally — AI will save you hours every week. Not theoretically. Actually. And one thing that's changed recently — Claude can now generate actual Excel and PowerPoint files you can download. Not just text — real files you can open in Office."
 
 ---
 
 ### Part 2: What AI Is Mediocre At ⚠️
 
-These work, but manage your expectations. Think "helpful intern" not "expert":
+These work, but manage your expectations:
 
-- **Excel/Spreadsheets** — Can read and analyse data you upload. Can suggest formulas. But it can't directly edit your .xlsx file and give it back perfectly formatted. Output is often a markdown table or code snippet, not a polished spreadsheet. *Use it for analysis, not formatting.*
+- **Complex spreadsheet formatting** — AI can generate working .xlsx files with data and formulas, but don't expect pixel-perfect branded templates with conditional formatting and pivot tables. It generates *functional* spreadsheets, not design-award ones. Great for data exports; you may want to polish the formatting.
 
-- **PowerPoint/Slides** — Can generate content, structure, and talking points. Tools like Gamma and Beautiful.ai help with design. But AI-generated slides often look generic — you'll want to polish them. Claude's artifacts can create basic slide-like views, which is what we used to build this talk.
+- **Presentation design** — AI can generate .pptx files and structured slide content, but the visual design tends to be basic. Tools like Gamma and Beautiful.ai help with the design side. For content and structure, AI is excellent; for making it look stunning, you'll want a human touch.
 
-- **Diagrams & Charts** — Can describe them, write code to generate them (Mermaid, SVG). Can't produce publication-quality visuals directly without a rendering tool.
+- **Diagrams & Charts** — Can describe them, write code to generate them (Mermaid, SVG). Interactive charts in artifacts work well. Publication-quality visuals for print still need a rendering tool.
 
-- **Complex Formatting** — Multi-column layouts, branded templates, precise positioning — not there yet. It writes content brilliantly; it doesn't do graphic design.
+- **Complex formatting** — Multi-column layouts, branded templates, precise positioning — not there yet. It writes content brilliantly; it doesn't do graphic design.
 
 - **Maths** — Basic arithmetic and business formulas are fine. Complex maths can have errors. Always double-check the numbers.
 
-> 💡 **What this means for you:** Use AI to generate the *content*, then use your normal tools to make it look right. The 80/20 rule applies perfectly: AI does 80% of the work in 20% of the time. You do the last 20% (formatting, polish, checking).
+> 💡 **What this means for you:** AI can now generate the files directly — Excel, PowerPoint, PDFs. The content will be good. The formatting will be functional but basic. Budget a few minutes to polish the look. The 80/20 rule still applies: AI does 80% of the work in 20% of the time.
 
-> 🎤 **Speaker note:** "This is where people get disappointed — they expect AI to hand them a perfect PowerPoint or a formatted Excel file. It doesn't work that way yet. Think of AI as the brain, not the graphic designer. It creates the content; you make it pretty. Still saves you 80% of the time."
+> 🎤 **Speaker note:** "This used to be worse — AI couldn't generate actual files at all. Now Claude can hand you a real Excel spreadsheet or PowerPoint file. The content is solid. The formatting is... fine. Think of it as getting a perfectly written first draft that needs 10 minutes of design love. Still saves you hours."
 
 ---
 
@@ -184,23 +172,28 @@ These work, but manage your expectations. Think "helpful intern" not "expert":
 
 Be clear-eyed about the limits:
 
-- **Access your local files** — unless you upload them or use integration tools (more on this in a moment)
-- **Remember between conversations** — each new chat starts fresh, unless the tool has memory features (Claude Projects, ChatGPT memory)
-- **Take actions in other software** — it can't click buttons in your CRM, send emails, or book meetings by itself... *unless* it's connected via something called MCP (and I'm about to explain that)
-- **Guarantee accuracy** — hallucinations are real. AI can state completely made-up facts with total confidence. *Always verify facts, numbers, and especially legal text.*
-- **Replace domain expertise** — it's a powerful assistant, not an expert. A bad prompt gets a confident but wrong answer. The human in the loop is still essential.
+- **Guarantee accuracy** — Hallucinations are real. AI can state completely made-up facts with total confidence. *Always verify facts, numbers, and especially legal text.*
+- **Replace domain expertise** — It's a powerful assistant, not an expert. A bad prompt gets a confident but wrong answer. The human in the loop is still essential.
+- **Remember between conversations** — Each new chat starts fresh, unless the tool has memory features (Claude Projects, ChatGPT memory).
+- **Take actions in other software by default** — It can't click buttons in your CRM, send emails, or book meetings by itself... *unless* it's connected via something called MCP (and I'm about to explain that).
 
-> 💡 **What this means for you:** AI is a brilliant assistant, not an autonomous employee. Trust but verify. Use it to draft, analyse, and brainstorm — then apply your own expertise and judgment before acting.
+**What about accessing your files?** This has improved dramatically:
+- **Claude Co-work** can now read files from your local machine — it has file system access within the Co-work environment
+- **OpenClaw** has full local file access — it can read, search, and work with anything on your computer
+- **Standard claude.ai chat** still requires you to upload files manually — but that takes seconds
+- **ChatGPT** can read uploaded files and has persistent memory across conversations
 
-> 🎤 **Speaker note:** "This is the slide I wish every AI company would put on their homepage. AI is incredible, but it's not magic. It makes things up. It can't access your systems. It doesn't remember you. Knowing these limits is what separates people who use AI effectively from people who give up after one bad experience."
+> 💡 **What this means for you:** AI is a brilliant assistant, not an autonomous employee. Trust but verify. Use it to draft, analyse, and brainstorm — then apply your own expertise and judgment before acting. The biggest risk isn't that AI can't do something — it's that it does it *confidently wrong* and you don't check.
+
+> 🎤 **Speaker note:** "The single most important thing on this slide: AI makes things up. Confidently. Convincingly. It will cite a study that doesn't exist, quote a statistic it invented, or draft a contract clause that sounds perfect but is legally nonsense. Always check. That said — the tools are getting much better at accessing your actual data. Claude Co-work can read your local files now. And tools like OpenClaw can access everything on your machine. The 'AI lives in a box' story is becoming less true every month."
 
 ---
 
 ### Part 4: MCP — The Game-Changer 🔌
 
-> 🎤 **Speaker note:** "Now, I just said AI can't access your files, your email, or your calendar. That's true... by default. But there's something new that's changing this — and it's called MCP. Let me explain it without any jargon."
+> 🎤 **Speaker note:** "Now, I mentioned AI can't take actions in your other software — by default. But there's something that's changing this, and it's called MCP. Let me explain it without any jargon."
 
-**The problem:** AI lives in a box. It can only see what you copy-paste into it. It can't check your email, look at your calendar, query your database, or update your CRM.
+**The problem:** By default, AI can only see what you give it. It can't check your email, look at your calendar, query your database, or update your CRM.
 
 **MCP is like giving AI hands.**
 
@@ -252,7 +245,7 @@ One last concept: just like your phone has an app store, AI tools are getting th
 
 ---
 
-## SLIDE 6 — Putting It All Together: Workflow Automation
+## SLIDE 5 — Putting It All Together: Workflow Automation
 
 > 🎤 **Speaker note:** "Alright, so we've covered what AI can do, what it can't do, and how it connects to your tools through MCP. Now here's the really exciting bit — what happens when you chain all of this together into workflows that run *without you*? This is where AI goes from 'a clever tool I use sometimes' to 'a system that works for me while I sleep.'"
 
@@ -284,7 +277,7 @@ Here's a quick tour of the tools you can actually use today. I've ordered them f
 - **What it is:** A visual workflow builder — you literally drag and drop to create automations
 - **Integrations:** 1,500+ apps (Gmail, Slack, Notion, HubSpot, Xero, you name it)
 - **AI capability:** AI modules built in — add a "call Claude" or "call GPT" step to any workflow
-- **Cost:** Free tier available, Pro from ~$9/month
+- **Cost:** Free tier available, Pro from ~£7/month
 - **Best for:** Non-technical users. Lots of ready-made templates. Friendliest interface.
 - **Limitation:** Cloud-only — your data goes through their servers
 
@@ -292,7 +285,7 @@ Here's a quick tour of the tools you can actually use today. I've ordered them f
 - **What it is:** The original workflow automation tool. The biggest integration library on the planet.
 - **Integrations:** 6,000+ apps — if it exists, Zapier probably connects to it
 - **AI capability:** AI actions available — you can ask AI to process data within a "Zap"
-- **Cost:** Free tier (limited), paid from ~$20/month
+- **Cost:** Free tier (limited), paid from ~£16/month
 - **Best for:** Simple automations with the widest app support. "I need X to talk to Y" — Zapier probably has it.
 - **Limitation:** Can get expensive as you add more workflows; AI features are newer
 
@@ -308,7 +301,7 @@ Here's a quick tour of the tools you can actually use today. I've ordered them f
 - **What it is:** A visual workflow builder like Make.com, but open-source and self-hostable
 - **Integrations:** 400+ built-in, plus you can connect to anything with an API
 - **AI capability:** Full AI integration — call Claude, GPT, or any model as a workflow step
-- **Cost:** Free if you self-host; cloud version from ~$20/month
+- **Cost:** Free if you self-host; cloud version from ~£16/month
 - **Best for:** Technical users who want full control. Your data stays on your own servers.
 - **Limitation:** Requires more technical knowledge to set up and maintain
 
@@ -375,17 +368,17 @@ Don't overthink it. Here's the quick decision guide:
 
 | Tool | Price | Integrations | AI? | Technical Level | Best For |
 |------|-------|-------------|-----|----------------|----------|
-| **Make.com** | Free / $9+/mo | 1,500+ | ✅ Built-in | 🟢 Easy | Beginners, visual thinkers |
-| **Zapier** | Free / $20+/mo | 6,000+ | ✅ Available | 🟢 Easy | Widest app support |
+| **Make.com** | Free / £7+/mo | 1,500+ | ✅ Built-in | 🟢 Easy | Beginners, visual thinkers |
+| **Zapier** | Free / £16+/mo | 6,000+ | ✅ Available | 🟢 Easy | Widest app support |
 | **Power Automate** | Often included in M365 | Microsoft-deep | ✅ AI Builder | 🟡 Medium | Microsoft shops |
-| **n8n** | Free (self-host) / $20+/mo | 400+ | ✅ Full | 🔴 Technical | Full control, privacy |
+| **n8n** | Free (self-host) / £16+/mo | 400+ | ✅ Full | 🔴 Technical | Full control, privacy |
 | **OpenClaw** | Free (open-source) | Via MCP/skills | ✅ AI-native | 🔴 Technical | AI-first automation |
 
-> 🎤 **Speaker note (transition):** "Right — so that's the automation landscape. You've got the full picture now: what AI can do, how it connects to your tools, and how you can automate entire workflows. Now let me show you the specific tools that bring this to life for everyday work — and then we'll get into the live demos."
+> 🎤 **Speaker note (transition):** "Right — so that's the automation landscape. You've got the full picture now: what AI can do, how it connects to your tools, and how you can automate entire workflows. Now let me show you the specific tools that bring this to life for everyday work."
 
 ---
 
-## SLIDE 7 — AI Beyond Chat: Tools for Non-Technical Work
+## SLIDE 6 — AI Beyond Chat: Tools for Non-Technical Work
 
 > 🎤 **Speaker note:** "Now, AI isn't just a chatbot you ask questions to. There are tools that embed AI into the work you're already doing. Here are three worth knowing about."
 
@@ -395,59 +388,12 @@ Don't overthink it. Here's the quick decision guide:
 |---------|-------------------------------|---------------------------|------------------------|
 | **What It Is** | Collaborative workspace where Claude works alongside you — creates docs, spreadsheets, code, and artifacts in real-time | Personal AI assistant framework that connects AI to your email, calendar, messaging, files | AI built directly into Notion's project management, notes, and docs |
 | **Underlying Model(s)** | Claude Sonnet 4.6 / Opus 4.6 | Any model (Claude, GPT, Gemini — you choose) | Multiple (Claude, GPT, Gemini) |
-| **Key Functionality** | Draft documents, analyse data, create presentations, iterate collaboratively in a persistent workspace | "Check my email, summarise what's urgent, and draft replies." AI operates your tools directly | Summarise pages, generate content, answer questions about your Notion workspace |
-| **Pricing** | Included with Claude Pro ($20/month) | Free (open-source, self-hosted) | $10/month per member (add-on to Notion plan) |
+| **Key Functionality** | Draft documents, analyse data, create presentations, generate Excel/PowerPoint files, read your local files, iterate collaboratively in a persistent workspace | "Check my email, summarise what's urgent, and draft replies." AI operates your tools directly with full local file access | Summarise pages, generate content, answer questions about your Notion workspace |
+| **Pricing** | Included with Claude Pro (£16/month) | Free (open-source, self-hosted) | ~£8/month per member (add-on to Notion plan) |
 | **Best For** | Business professionals who want a versatile AI co-worker for documents, analysis, and creative work | Power users who want AI integrated into their actual workflow tools (email, calendar, etc.) | Teams already using Notion who want AI enhancements in their existing workspace |
 | **Limitations** | Tied to Anthropic's ecosystem; requires Claude subscription for full features | Requires some technical setup; self-hosted means you manage it | Only works within Notion; limited outside that ecosystem |
 
-> 🎤 **Speaker note:** "The takeaway: AI isn't just a chatbot. These tools embed AI into the work you're already doing. The gap between 'talking to an AI' and 'AI doing the work' is closing fast. For today's demos, we'll focus on Claude — because it's the most accessible and versatile for business users."
-
----
-
-## SLIDE 8 — Five Things You're About to See Me Do Live
-
-> 🎤 **Speaker note:** "Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, Claude, and a business problem. Each one demonstrates a different AI capability."
-
-### 1. 📊 Turn Messy Financials into an Executive Summary
-**Capability demonstrated: File upload + data analysis**
-- **The task:** I'll take a raw, unformatted Excel spreadsheet of company financials — the kind your accountant emails you — and ask AI to clean it up, calculate key financial ratios (profit margin, burn rate, runway), and produce a board-ready executive summary
-- **Tool:** Claude (claude.ai — upload the file, ask questions about it)
-- **Why it's impressive:** This normally takes a financial analyst 2–3 hours. We'll do it in under 5 minutes.
-- **What you'll see:** Messy spreadsheet in → clean summary with charts out
-
-### 2. 📝 Draft a Professional Services Contract from a Brief
-**Capability demonstrated: Long-form writing + iteration**
-- **The task:** Given a one-paragraph description of a consulting engagement, I'll generate a full professional services agreement — proper legal structure, payment terms, IP clauses, limitation of liability — then refine specific clauses in real-time
-- **Tool:** Claude (claude.ai)
-- **Why it's impressive:** This is a £500–£2,000 job from a solicitor for a first draft. AI gets you 80% there in 2 minutes. (Still get it reviewed — but your starting point is dramatically better.)
-- **What you'll see:** One-paragraph brief in → multi-page contract out → live clause refinement
-
-### 3. 🎨 Create a Brand Identity from Scratch
-**Capability demonstrated: Image generation from text**
-- **The task:** We'll invent a fictional business on the spot (audience picks the concept), then generate a logo, colour palette, and brand guidelines. We'll use ChatGPT for logo generation (its built-in GPT Image model), then hop back to Claude for the full brand guidelines and tone of voice document
-- **Tool:** ChatGPT (chatgpt.com — GPT Image for logo/visuals) + Claude (claude.ai — for brand guidelines document)
-- **Why it's impressive:** A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes.
-- **What you'll see:** Business idea → logo options (ChatGPT) → full brand guidelines document (Claude)
-
-> 🎤 **Speaker note:** "This is the one demo where we switch tools. Claude is fantastic for text, analysis, and documents — but it doesn't generate images. ChatGPT's free tier includes excellent image generation via GPT Image, so we'll use the best tool for each job. This is actually a great lesson: you don't have to pick just one."
-
-### 4. 🔍 Deep-Dive Market Research with Sources
-**Capability demonstrated: Web search + research**
-- **The task:** I'll pick a market (or the audience picks one), and ask AI to produce a structured competitive analysis — market size, key players, trends, threats, opportunities — with actual sources you can verify
-- **Tool:** Claude (claude.ai — with built-in web search enabled)
-- **Why it's impressive:** This is a week-long consulting engagement compressed into minutes. The sources are real, clickable, and verifiable.
-- **What you'll see:** Market question → structured research report with citations
-
-### 5. 🚀 Build an Investor Pitch Deck from a Napkin Idea
-**Capability demonstrated: Presentation/artifact creation**
-- **The task:** Starting from a one-line business idea, I'll produce a complete investor pitch deck — problem, solution, market size, business model, team slide, financial projections, the ask — directly in Claude as an artifact
-- **Tool:** Claude (claude.ai — using artifacts to create the presentation directly)
-- **Why it's impressive:** Founders spend weeks on pitch decks. We'll have a solid first draft in minutes. Claude can create structured presentations as artifacts that you can export.
-- **What you'll see:** One-line idea → complete pitch deck with 10–12 slides
-
----
-
-> 🎤 **Speaker note (transition to Talk 2):** "Five real tasks. No magic, no pre-prepared answers. Almost all done with Claude — plus ChatGPT for image generation. Both are available free to every single person in this room. Ready to see it happen? Let's go."
+> 🎤 **Speaker note:** "The takeaway: AI isn't just a chatbot. These tools embed AI into the work you're already doing. Claude Co-work can now read your local files and generate actual Excel and PowerPoint documents. OpenClaw can access everything on your machine. The gap between 'talking to an AI' and 'AI doing the work' is closing fast."
 
 ---
 
@@ -461,11 +407,11 @@ Don't overthink it. Here's the quick decision guide:
 - ChatGPT is also excellent — similar capabilities, different interface
 
 **If someone asks "is it free?":**
-- Claude: Free tier available, Pro $20/month (~£16), Max from $100/month
-- ChatGPT: Free tier available, Plus $20/month (~£16), Pro $200/month
-- Gemini: Free in Google products, Advanced $19.99/month (~£16)
-- Grok: Free via X, full access with X Premium+ $22/month (~£18)
-- Perplexity: Free with limits, Pro ~$20/month (~£16)
+- Claude: Free tier available, Pro £16/month, Max from £80/month
+- ChatGPT: Free tier available, Plus £16/month, Pro £160/month
+- Gemini: Free in Google products, Advanced £16/month
+- Grok: Free via X, full access with X Premium+ £18/month
+- Perplexity: Free with limits, Pro £16/month
 
 **If someone asks "is it safe / will it steal my data?":**
 - All major providers have enterprise tiers where data isn't used for training
@@ -475,3 +421,9 @@ Don't overthink it. Here's the quick decision guide:
 
 **If someone asks "will it replace my job?":**
 - "AI won't replace you. But someone using AI might. That's why we're here tonight."
+
+**If someone asks "can AI generate Excel/PowerPoint files?":**
+- Yes! Claude can generate downloadable .xlsx and .pptx files via artifacts
+- The content and structure will be solid; formatting will be functional but basic
+- For polished presentations, use AI for the content then refine in PowerPoint/Keynote
+- ChatGPT can also generate files, and tools like Gamma specialise in AI presentations
