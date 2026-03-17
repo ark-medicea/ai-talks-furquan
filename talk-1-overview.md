@@ -52,14 +52,12 @@ Each company makes different models for different jobs — like how a car maker 
 
 | Company | 🧠 Thinking Model (Deep Reasoning) | ⚡ Standard Model (Everyday Use) | 🏎️ Fast/Lightweight Model | 🎨 Image Generation |
 |---------|--------------------------------------|-----------------------------------|---------------------------|---------------------|
-| **OpenAI** | o3 | GPT-4.1 | GPT-4.1 mini | GPT-4o image gen / DALL·E 3 |
-| **Google** | Gemini 2.5 Pro | Gemini 2.5 Flash | Gemini 2.0 Flash Lite | Imagen 3 |
-| **Anthropic** | Claude Opus 4 | Claude Sonnet 4 | Claude Haiku 3.5 | Built into Claude (via Sonnet) |
-| **Meta** | Llama 4 Behemoth* | Llama 4 Maverick | Llama 4 Scout | — (no image gen) |
-| **xAI** | Grok 3 (think mode) | Grok 3 | Grok 3 Mini | Aurora (built into Grok) |
-| **Perplexity** | Uses multiple models | Uses multiple models | Uses multiple models | — (search-focused) |
-
-*\*Meta's Llama 4 Behemoth was announced but may still be in limited release as of March 2026.*
+| **OpenAI** | GPT-5.4 Thinking | GPT-5.4 | GPT-4.1 mini | GPT Image (built-in) |
+| **Google** | Gemini 3 Deep Think | Gemini 3.1 Pro | Gemini 3.1 Flash Lite | Imagen 4 |
+| **Anthropic** | Claude Opus 4.6 | Claude Sonnet 4.6 | Claude Haiku 4.5 | None (vision only) |
+| **Meta** | — | Llama 4 Maverick (400B MoE) | Llama 4 Scout (109B MoE) | Meta Imagine |
+| **xAI** | Grok 4.1 Thinking | Grok 4.20 Beta | Grok 4.1 Fast | Aurora |
+| **Perplexity** | — (aggregator) | Sonar / user picks model | — | — |
 
 **What do these categories mean?**
 - **Thinking models** take longer but work through complex problems step-by-step — great for analysis, strategy, hard questions
@@ -77,7 +75,7 @@ Each company makes different models for different jobs — like how a car maker 
 
 ### Models are the engine. Tools are the car.
 
-- The **model** (GPT-4.1, Claude, Gemini) is the intelligence — it understands language, reasons, generates
+- The **model** (GPT-5.4, Claude, Gemini) is the intelligence — it understands language, reasons, generates
 - The **tool** (ChatGPT, claude.ai, Gemini app) is how you interact with that intelligence for a specific job
 - Many tools let you swap models — like choosing which engine goes in your car
 - You don't need to understand engines to drive. Same here.
@@ -98,11 +96,11 @@ Tokens are how AI measures text — roughly **1 token ≈ ¾ of a word**. So 1,0
 
 | Service | Free Tier | What You Get Free | Pro/Paid Tier | Cost/Month | What Pro Adds |
 |---------|-----------|-------------------|---------------|------------|---------------|
-| **Claude** (Anthropic) | ✅ Yes | Sonnet 4 with usage limits; basic features | Claude Pro | **$20/month (~£16)** | 5× more usage, Opus 4 access, priority, web search, file uploads, image gen |
-| **ChatGPT** (OpenAI) | ✅ Yes | GPT-4o with limits; basic features | ChatGPT Plus | **$20/month (~£16)** | More usage, GPT-4.1 access, o3, image gen (DALL·E), file uploads |
-| **Gemini** (Google) | ✅ Yes | Gemini 2.5 Flash; integrated into Google apps | Gemini Advanced | **$20/month (~£16)** | Gemini 2.5 Pro, 1M token context, Notebook LM, deeper Google integration |
-| **Grok** (xAI) | ✅ Yes (via X) | Basic Grok access on X | SuperGrok | **$30/month (~£24)** | Higher limits, Grok 3 full, Aurora image gen |
-| **Perplexity** | ✅ Yes | 5 Pro searches/day, unlimited quick searches | Perplexity Pro | **$20/month (~£16)** | 300+ Pro searches/day, file upload, faster models |
+| **Claude** (Anthropic) | ✅ Yes | Sonnet/Haiku with usage limits; basic features | Claude Pro / Max | **$20/mo (~£16)** / Max from **$100/mo** | 5× more usage, Opus 4.6 access, priority, web search, file uploads |
+| **ChatGPT** (OpenAI) | ✅ Yes | GPT-5.x (limited) + GPT-4.1 mini; image gen | ChatGPT Plus / Pro | **$20/mo (~£16)** / **$200/mo** | Full GPT-5.4, GPT-5.4 Thinking, unlimited usage, Deep Research |
+| **Gemini** (Google) | ✅ Yes | Gemini Flash models; integrated into Google apps | Gemini Advanced | **$19.99/mo (~£16)** | Gemini 3.1 Pro, 3 Deep Think, 1M token context, deeper Google integration |
+| **Grok** (xAI) | ✅ Yes (via X) | Basic Grok access on X | X Premium+ | **$22/mo (~£18)** | Full Grok 4.x access, Aurora image gen, no ads |
+| **Perplexity** | ✅ Yes | Limited searches, basic LLM answers | Perplexity Pro | **~$20/mo (~£16)** | Choose backend model (GPT-5.4, Claude 4.6, Gemini 3.1 Pro), Deep Research |
 
 *Prices approximate as of March 2026. All offer annual discounts.*
 
@@ -112,10 +110,10 @@ If you're building apps with AI, you pay per token rather than a monthly subscri
 
 | Model | Input (per 1M tokens) | Output (per 1M tokens) |
 |-------|----------------------|------------------------|
-| Claude Sonnet 4 | ~$3 | ~$15 |
-| GPT-4.1 | ~$2 | ~$8 |
-| Gemini 2.5 Flash | ~$0.15 | ~$0.60 |
-| Claude Haiku 3.5 | ~$0.80 | ~$4 |
+| Claude Sonnet 4.6 | ~$3 | ~$15 |
+| Claude Opus 4.6 | ~$5 | ~$25 |
+| Gemini 3.1 Flash Lite | ~$0.25 | ~$1.50 |
+| Claude Haiku 4.5 | ~$1 | ~$5 |
 
 *Most people in this room will use the consumer products, not the API — so don't worry about this table. It's here if you're curious.*
 
@@ -123,13 +121,13 @@ If you're building apps with AI, you pay per token rather than a monthly subscri
 
 **For most business users: Claude Pro at $20/month is the best value.** Here's why:
 - Best-in-class for long documents, contracts, analysis, and writing
-- Image generation built in (no separate tool needed)
 - Web search included
 - Co-work feature for collaborative projects (more on this next)
 - File upload for spreadsheets, PDFs, documents
 - Consistently ranks highest for business/professional tasks
+- *Note: Claude does not generate images — for that, use ChatGPT (free tier includes GPT Image)*
 
-ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's ecosystem. You genuinely can't go wrong with either.
+ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's ecosystem or need image generation. You genuinely can't go wrong with either.
 
 > 🎤 **Speaker note:** "Here's my honest take: if you do nothing else after today, spend £16 on Claude Pro for one month and actually use it. Use it for everything — emails, analysis, contracts, research. If after a month you don't think it's worth it, cancel. But I've never met anyone who's cancelled."
 
@@ -144,7 +142,7 @@ ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's e
 | Feature | **Claude Co-work** (Anthropic) | **OpenClaw** (Open Source) | **Notion AI** (Notion) |
 |---------|-------------------------------|---------------------------|------------------------|
 | **What It Is** | Collaborative workspace where Claude works alongside you — creates docs, spreadsheets, code, and artifacts in real-time | Personal AI assistant framework that connects AI to your email, calendar, messaging, files | AI built directly into Notion's project management, notes, and docs |
-| **Underlying Model(s)** | Claude Sonnet 4 / Opus 4 | Any model (Claude, GPT, Gemini — you choose) | Multiple (Claude, GPT-4o, Gemini) |
+| **Underlying Model(s)** | Claude Sonnet 4.6 / Opus 4.6 | Any model (Claude, GPT, Gemini — you choose) | Multiple (Claude, GPT, Gemini) |
 | **Key Functionality** | Draft documents, analyse data, create presentations, iterate collaboratively in a persistent workspace | "Check my email, summarise what's urgent, and draft replies." AI operates your tools directly | Summarise pages, generate content, answer questions about your Notion workspace |
 | **Pricing** | Included with Claude Pro ($20/month) | Free (open-source, self-hosted) | $10/month per member (add-on to Notion plan) |
 | **Best For** | Business professionals who want a versatile AI co-worker for documents, analysis, and creative work | Power users who want AI integrated into their actual workflow tools (email, calendar, etc.) | Teams already using Notion who want AI enhancements in their existing workspace |
@@ -174,10 +172,12 @@ ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's e
 
 ### 3. 🎨 Create a Brand Identity from Scratch
 **Capability demonstrated: Image generation from text**
-- **The task:** We'll invent a fictional business on the spot (audience picks the concept), then generate a logo, colour palette, brand guidelines, and tone of voice document — all directly in Claude
-- **Tool:** Claude (claude.ai — which now generates images directly)
+- **The task:** We'll invent a fictional business on the spot (audience picks the concept), then generate a logo, colour palette, and brand guidelines. We'll use ChatGPT for logo generation (its built-in GPT Image model), then hop back to Claude for the full brand guidelines and tone of voice document
+- **Tool:** ChatGPT (chatgpt.com — GPT Image for logo/visuals) + Claude (claude.ai — for brand guidelines document)
 - **Why it's impressive:** A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes.
-- **What you'll see:** Business idea → logo options → full brand guidelines document
+- **What you'll see:** Business idea → logo options (ChatGPT) → full brand guidelines document (Claude)
+
+> 🎤 **Speaker note:** "This is the one demo where we switch tools. Claude is fantastic for text, analysis, and documents — but it doesn't generate images. ChatGPT's free tier includes excellent image generation via GPT Image, so we'll use the best tool for each job. This is actually a great lesson: you don't have to pick just one."
 
 ### 4. 🔍 Deep-Dive Market Research with Sources
 **Capability demonstrated: Web search + research**
@@ -195,7 +195,7 @@ ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's e
 
 ---
 
-> 🎤 **Speaker note (transition to Talk 2):** "Five real tasks. No magic, no pre-prepared answers. All done with one tool — Claude — that's available to every single person in this room. Ready to see it happen? Let's go."
+> 🎤 **Speaker note (transition to Talk 2):** "Five real tasks. No magic, no pre-prepared answers. Almost all done with Claude — plus ChatGPT for image generation. Both are available free to every single person in this room. Ready to see it happen? Let's go."
 
 ---
 
@@ -203,14 +203,16 @@ ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's e
 
 **If someone asks "which one should I use?":**
 - For everything in today's demos: **Claude** (claude.ai — what I use daily)
+- For image generation: **ChatGPT** (chatgpt.com — GPT Image, available on free tier)
 - For research with sources: **Claude with web search** (or Perplexity as a free alternative)
 - For anything in Google Workspace: **Gemini** (already built in)
 - ChatGPT is also excellent — similar capabilities, different interface
 
 **If someone asks "is it free?":**
-- Claude: Free tier available, Pro ~$20/month (~£16) for full power — this is what I use
-- ChatGPT: Free tier available, Plus ~$20/month (~£16)
-- Gemini: Free in Google products, Advanced $20/month (~£16)
+- Claude: Free tier available, Pro $20/month (~£16), Max from $100/month
+- ChatGPT: Free tier available, Plus $20/month (~£16), Pro $200/month
+- Gemini: Free in Google products, Advanced $19.99/month (~£16)
+- Grok: Free via X, full access with X Premium+ $22/month (~£18)
 - Perplexity: Free with limits, Pro ~$20/month (~£16)
 
 **If someone asks "is it safe / will it steal my data?":**

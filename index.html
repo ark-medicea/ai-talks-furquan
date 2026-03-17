@@ -465,51 +465,51 @@
         <tbody>
           <tr>
             <td><strong>OpenAI</strong></td>
-            <td>o3</td>
-            <td>GPT-4.1</td>
+            <td>GPT-5.4 Thinking</td>
+            <td>GPT-5.4</td>
             <td>GPT-4.1 mini</td>
-            <td>GPT-4o image gen / DALL·E 3</td>
+            <td>GPT Image (built-in)</td>
           </tr>
           <tr>
             <td><strong>Google</strong></td>
-            <td>Gemini 2.5 Pro</td>
-            <td>Gemini 2.5 Flash</td>
-            <td>Gemini 2.0 Flash Lite</td>
-            <td>Imagen 3</td>
+            <td>Gemini 3 Deep Think</td>
+            <td>Gemini 3.1 Pro</td>
+            <td>Gemini 3.1 Flash Lite</td>
+            <td>Imagen 4</td>
           </tr>
           <tr>
             <td><strong>Anthropic</strong></td>
-            <td>Claude Opus 4</td>
-            <td>Claude Sonnet 4</td>
-            <td>Claude Haiku 3.5</td>
-            <td>Built into Claude (via Sonnet)</td>
+            <td>Claude Opus 4.6</td>
+            <td>Claude Sonnet 4.6</td>
+            <td>Claude Haiku 4.5</td>
+            <td>None (vision only)</td>
           </tr>
           <tr>
             <td><strong>Meta</strong></td>
-            <td>Llama 4 Behemoth*</td>
-            <td>Llama 4 Maverick</td>
-            <td>Llama 4 Scout</td>
-            <td>— (no image gen)</td>
+            <td>—</td>
+            <td>Llama 4 Maverick <span style="font-size:0.8rem;color:var(--text-muted)">(400B MoE)</span></td>
+            <td>Llama 4 Scout <span style="font-size:0.8rem;color:var(--text-muted)">(109B MoE)</span></td>
+            <td>Meta Imagine</td>
           </tr>
           <tr>
             <td><strong>xAI</strong></td>
-            <td>Grok 3 (think mode)</td>
-            <td>Grok 3</td>
-            <td>Grok 3 Mini</td>
-            <td>Aurora (built into Grok)</td>
+            <td>Grok 4.1 Thinking</td>
+            <td>Grok 4.20 Beta</td>
+            <td>Grok 4.1 Fast</td>
+            <td>Aurora</td>
           </tr>
           <tr>
             <td><strong>Perplexity</strong></td>
-            <td>Uses multiple models</td>
-            <td>Uses multiple models</td>
-            <td>Uses multiple models</td>
+            <td>— (aggregator)</td>
+            <td>Sonar / user picks model</td>
+            <td>—</td>
             <td>— (search-focused)</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">*Meta's Llama 4 Behemoth was announced but may still be in limited release as of March 2026.</p>
+    <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">Model versions accurate as of March 2026. Meta has no dedicated thinking model yet (Llama 4 Behemoth announced but unreleased). Perplexity aggregates other providers' models.</p>
 
     <div class="speaker-note">
       Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with Claude. It's what I use for everything you're about to see.
@@ -530,7 +530,7 @@
     <div class="key-concept">
       <h3>Models are the engine. Tools are the car.</h3>
       <ul style="text-align:left; list-style:none; margin:20px auto; max-width:640px;">
-        <li style="margin-bottom:12px;">🧠 The <strong>model</strong> (GPT-4.1, Claude, Gemini) is the intelligence — it understands language, reasons, generates</li>
+        <li style="margin-bottom:12px;">🧠 The <strong>model</strong> (GPT-5.4, Claude, Gemini) is the intelligence — it understands language, reasons, generates</li>
         <li style="margin-bottom:12px;">🚗 The <strong>tool</strong> (ChatGPT, claude.ai, Gemini app) is how you interact with that intelligence for a specific job</li>
         <li style="margin-bottom:12px;">🔄 Many tools let you swap models — like choosing which engine goes in your car</li>
         <li>🔑 You don't need to understand engines to drive. Same here.</li>
@@ -567,42 +567,42 @@
           <tr>
             <td><strong>Claude</strong><br><span style="font-size:0.8rem;color:var(--text-muted)">Anthropic</span></td>
             <td style="color:var(--green);">✅ Yes</td>
-            <td>Sonnet 4 with usage limits; basic features</td>
-            <td>Claude Pro</td>
-            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
-            <td>5× more usage, Opus 4 access, priority, web search, file uploads, image gen</td>
+            <td>Sonnet/Haiku with usage limits; basic features</td>
+            <td>Claude Pro / Max</td>
+            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16 / Max from $100</span></strong></td>
+            <td>5× more usage, Opus 4.6 access, priority, web search, file uploads</td>
           </tr>
           <tr>
             <td><strong>ChatGPT</strong><br><span style="font-size:0.8rem;color:var(--text-muted)">OpenAI</span></td>
             <td style="color:var(--green);">✅ Yes</td>
-            <td>GPT-4o with limits; basic features</td>
-            <td>ChatGPT Plus</td>
-            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
-            <td>More usage, GPT-4.1, o3 access, image gen (DALL·E), file uploads</td>
+            <td>GPT-5.x (limited) + GPT-4.1 mini; image gen</td>
+            <td>ChatGPT Plus / Pro</td>
+            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16 / Pro $200</span></strong></td>
+            <td>Full GPT-5.4, GPT-5.4 Thinking, unlimited usage, Deep Research</td>
           </tr>
           <tr>
             <td><strong>Gemini</strong><br><span style="font-size:0.8rem;color:var(--text-muted)">Google</span></td>
             <td style="color:var(--green);">✅ Yes</td>
-            <td>Gemini 2.5 Flash; integrated into Google apps</td>
+            <td>Gemini Flash models; integrated into Google apps</td>
             <td>Gemini Advanced</td>
-            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
-            <td>Gemini 2.5 Pro, 1M token context, Notebook LM, deeper Google integration</td>
+            <td><strong>$19.99/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
+            <td>Gemini 3.1 Pro, 3 Deep Think, 1M token context, deeper Google integration</td>
           </tr>
           <tr>
             <td><strong>Grok</strong><br><span style="font-size:0.8rem;color:var(--text-muted)">xAI</span></td>
             <td style="color:var(--green);">✅ Yes (via X)</td>
             <td>Basic Grok access on X</td>
-            <td>SuperGrok</td>
-            <td><strong>$30/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£24</span></strong></td>
-            <td>Higher limits, Grok 3 full, Aurora image gen</td>
+            <td>X Premium+</td>
+            <td><strong>$22/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£18</span></strong></td>
+            <td>Full Grok 4.x access, Aurora image gen, no ads</td>
           </tr>
           <tr>
             <td><strong>Perplexity</strong><br><span style="font-size:0.8rem;color:var(--text-muted)">AI Search</span></td>
             <td style="color:var(--green);">✅ Yes</td>
-            <td>5 Pro searches/day, unlimited quick searches</td>
+            <td>Limited searches, basic LLM answers</td>
             <td>Perplexity Pro</td>
-            <td><strong>$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
-            <td>300+ Pro searches/day, file upload, faster models</td>
+            <td><strong>~$20/mo<br><span style="font-size:0.8rem;color:var(--text-muted)">~£16</span></strong></td>
+            <td>Choose backend model (GPT-5.4, Claude 4.6, Gemini 3.1 Pro), Deep Research</td>
           </tr>
         </tbody>
       </table>
@@ -617,10 +617,10 @@
           <tr><th>Model</th><th>Input (per 1M tokens)</th><th>Output (per 1M tokens)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Claude Sonnet 4</td><td>~$3</td><td>~$15</td></tr>
-          <tr><td>GPT-4.1</td><td>~$2</td><td>~$8</td></tr>
-          <tr><td>Gemini 2.5 Flash</td><td>~$0.15</td><td>~$0.60</td></tr>
-          <tr><td>Claude Haiku 3.5</td><td>~$0.80</td><td>~$4</td></tr>
+          <tr><td>Claude Sonnet 4.6</td><td>~$3</td><td>~$15</td></tr>
+          <tr><td>Claude Opus 4.6</td><td>~$5</td><td>~$25</td></tr>
+          <tr><td>Gemini 3.1 Flash Lite</td><td>~$0.25</td><td>~$1.50</td></tr>
+          <tr><td>Claude Haiku 4.5</td><td>~$1</td><td>~$5</td></tr>
         </tbody>
       </table>
     </div>
@@ -630,13 +630,12 @@
       <p><strong>For most business users, this is the best value.</strong> Here's why:</p>
       <ul>
         <li>Best-in-class for long documents, contracts, analysis, and writing</li>
-        <li>Image generation built in (no separate tool needed)</li>
         <li>Web search included</li>
         <li>Co-work feature for collaborative projects (more on this next)</li>
         <li>File upload for spreadsheets, PDFs, documents</li>
         <li>Consistently ranks highest for business/professional tasks</li>
       </ul>
-      <p style="margin-bottom:0; color:var(--text-muted);">ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's ecosystem. You genuinely can't go wrong with either.</p>
+      <p style="margin-bottom:0; color:var(--text-muted);">ChatGPT Plus is an equally strong choice — especially if you prefer OpenAI's ecosystem or need image generation (Claude doesn't generate images; ChatGPT does, even on the free tier). You genuinely can't go wrong with either.</p>
     </div>
 
     <div class="speaker-note">
@@ -669,9 +668,9 @@
           </tr>
           <tr>
             <td><strong>Underlying Model(s)</strong></td>
-            <td>Claude Sonnet 4 / Opus 4</td>
+            <td>Claude Sonnet 4.6 / Opus 4.6</td>
             <td>Any model (Claude, GPT, Gemini — you choose)</td>
-            <td>Multiple (Claude, GPT-4o, Gemini)</td>
+            <td>Multiple (Claude, GPT, Gemini)</td>
           </tr>
           <tr>
             <td><strong>Key Functionality</strong></td>
@@ -740,13 +739,17 @@
 
     <div class="use-case">
       <h4>3. 🎨 Create a Brand Identity from Scratch</h4>
-      <span class="tool-badge">Claude — Image Generation</span>
+      <span class="tool-badge">ChatGPT — GPT Image</span>
+      <span class="tool-badge">Claude — Brand Guidelines</span>
       <span class="capability-badge">Capability: Visual Creation from Text</span>
       <ul>
-        <li><strong>The task:</strong> Invent a fictional business on the spot (audience picks the concept), then generate a logo, colour palette, brand guidelines, and tone of voice document — all directly in Claude</li>
+        <li><strong>The task:</strong> Invent a fictional business on the spot (audience picks the concept), then generate a logo and colour palette in ChatGPT (GPT Image), and create full brand guidelines and tone of voice document in Claude</li>
         <li><strong>Why it's impressive:</strong> A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes.</li>
-        <li><strong>What you'll see:</strong> Business idea → logo options → full brand guidelines document</li>
+        <li><strong>What you'll see:</strong> Business idea → logo options (ChatGPT) → full brand guidelines document (Claude)</li>
       </ul>
+      <div class="speaker-note" style="margin-top:14px; margin-bottom:0;">
+        This is the one demo where we switch tools. Claude doesn't generate images, but ChatGPT's free tier includes excellent image generation via GPT Image. Great lesson: use the best tool for each job — you don't have to pick just one.
+      </div>
     </div>
 
     <div class="use-case">
@@ -772,7 +775,7 @@
     </div>
 
     <div class="speaker-note">
-      Five real tasks. No magic, no pre-prepared answers. All done with one tool — Claude — that's available to every single person in this room. Ready to see it happen? Let's go.
+      Five real tasks. No magic, no pre-prepared answers. Almost all done with Claude — plus ChatGPT for image generation. Both are available free to every single person in this room. Ready to see it happen? Let's go.
     </div>
 
     <div class="talk-links" style="margin-top:32px;">
@@ -788,6 +791,7 @@
       <h4>💬 "Which one should I use?"</h4>
       <ul>
         <li>For everything in today's demos: <strong>Claude</strong> (claude.ai — what I use daily)</li>
+        <li>For image generation: <strong>ChatGPT</strong> (chatgpt.com — GPT Image, available on free tier)</li>
         <li>For research with sources: <strong>Claude with web search</strong> (or Perplexity as a free alternative)</li>
         <li>For anything in Google Workspace: <strong>Gemini</strong> (already built in)</li>
         <li>ChatGPT is also excellent — similar capabilities, different interface</li>
@@ -797,9 +801,10 @@
     <div class="cheat-card">
       <h4>💰 "Is it free?"</h4>
       <ul>
-        <li>Claude: Free tier available, Pro ~$20/month (~£16) for full power — this is what I use</li>
-        <li>ChatGPT: Free tier available, Plus ~$20/month (~£16)</li>
-        <li>Gemini: Free in Google products, Advanced $20/month (~£16)</li>
+        <li>Claude: Free tier available, Pro $20/month (~£16), Max from $100/month</li>
+        <li>ChatGPT: Free tier available, Plus $20/month (~£16), Pro $200/month</li>
+        <li>Gemini: Free in Google products, Advanced $19.99/month (~£16)</li>
+        <li>Grok: Free via X, full access with X Premium+ $22/month (~£18)</li>
         <li>Perplexity: Free with limits, Pro ~$20/month (~£16)</li>
       </ul>
     </div>
