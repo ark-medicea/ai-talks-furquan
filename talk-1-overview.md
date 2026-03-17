@@ -16,9 +16,10 @@
 | 3 | Key concept: Models vs Tools | 30s |
 | 4 | "What Does It Cost?" — pricing & plans | 2 min |
 | 5 | "What Can AI Actually Do?" — capabilities, MCP, skills | 3 min |
-| 6 | "AI Beyond Chat" — non-technical tools comparison | 2 min |
-| 7 | "5 Things You'll See Me Do Live" — use cases | 2 min |
-| 8 | Transition to Talk 2 / Q&A buffer | 1 min |
+| 6 | "Putting It All Together" — workflow automation | 2 min |
+| 7 | "AI Beyond Chat" — non-technical tools comparison | 2 min |
+| 8 | "5 Things You'll See Me Do Live" — use cases | 2 min |
+| 9 | Transition to Talk 2 / Q&A buffer | 1 min |
 
 ---
 
@@ -251,7 +252,140 @@ One last concept: just like your phone has an app store, AI tools are getting th
 
 ---
 
-## SLIDE 6 — AI Beyond Chat: Tools for Non-Technical Work
+## SLIDE 6 — Putting It All Together: Workflow Automation
+
+> 🎤 **Speaker note:** "Alright, so we've covered what AI can do, what it can't do, and how it connects to your tools through MCP. Now here's the really exciting bit — what happens when you chain all of this together into workflows that run *without you*? This is where AI goes from 'a clever tool I use sometimes' to 'a system that works for me while I sleep.'"
+
+---
+
+### Part 1: What Are Workflow Automation Tools?
+
+You know how you might set a rule in your email: "If an email comes from this address, move it to this folder"? Workflow automation tools are that idea, but on steroids.
+
+Instead of one simple rule, you build a *chain* of actions:
+
+> **Example:** "When I get an email from a client → extract the key information → update my CRM → draft a reply → send it to me for approval"
+
+That's five steps, across three different apps, happening automatically.
+
+These tools have been around for years. But here's what's new: **you can now add AI as a step in the chain.** That means your automation can *think*, not just follow rigid rules.
+
+> 💡 **What this means for you:** Workflow automation isn't new. But workflow automation that can *reason* — that understands context, drafts intelligent responses, and makes judgment calls — that's brand new. And it's available right now.
+
+> 🎤 **Speaker note:** "Think of it this way. The old version: 'When I get an email, file it in this folder.' The new version: 'When I get an email, read it, figure out if it's urgent, draft an appropriate reply, update my project tracker, and let me know if I need to do anything.' Same trigger — wildly different outcome."
+
+---
+
+### Part 2: The Main Players
+
+Here's a quick tour of the tools you can actually use today. I've ordered them from simplest to most powerful:
+
+#### Make.com (formerly Integromat)
+- **What it is:** A visual workflow builder — you literally drag and drop to create automations
+- **Integrations:** 1,500+ apps (Gmail, Slack, Notion, HubSpot, Xero, you name it)
+- **AI capability:** AI modules built in — add a "call Claude" or "call GPT" step to any workflow
+- **Cost:** Free tier available, Pro from ~$9/month
+- **Best for:** Non-technical users. Lots of ready-made templates. Friendliest interface.
+- **Limitation:** Cloud-only — your data goes through their servers
+
+#### Zapier
+- **What it is:** The original workflow automation tool. The biggest integration library on the planet.
+- **Integrations:** 6,000+ apps — if it exists, Zapier probably connects to it
+- **AI capability:** AI actions available — you can ask AI to process data within a "Zap"
+- **Cost:** Free tier (limited), paid from ~$20/month
+- **Best for:** Simple automations with the widest app support. "I need X to talk to Y" — Zapier probably has it.
+- **Limitation:** Can get expensive as you add more workflows; AI features are newer
+
+#### Microsoft Power Automate
+- **What it is:** Microsoft's workflow tool, built right into Microsoft 365
+- **Integrations:** Deep integration with Office, Teams, SharePoint, Outlook, Dynamics
+- **AI capability:** AI Builder for adding AI steps (document processing, text analysis)
+- **Cost:** Included with many Microsoft 365 business licences — you might already have it
+- **Best for:** Companies already in the Microsoft ecosystem. If your business runs on Outlook, Teams, and SharePoint — this is the natural choice.
+- **Limitation:** Strongest within the Microsoft world; connecting to non-Microsoft apps is possible but less seamless
+
+#### n8n (open-source)
+- **What it is:** A visual workflow builder like Make.com, but open-source and self-hostable
+- **Integrations:** 400+ built-in, plus you can connect to anything with an API
+- **AI capability:** Full AI integration — call Claude, GPT, or any model as a workflow step
+- **Cost:** Free if you self-host; cloud version from ~$20/month
+- **Best for:** Technical users who want full control. Your data stays on your own servers.
+- **Limitation:** Requires more technical knowledge to set up and maintain
+
+#### OpenClaw (the AI-native approach)
+- **What it is:** Not a traditional workflow tool — it's an AI agent that *uses* tools
+- **The difference:** In Make.com or Zapier, AI is a step in your workflow. In OpenClaw, AI is the *orchestrator* — it decides what to do, in what order, based on the situation
+- **How it works:** Install "skills" (capabilities) and the AI figures out when and how to use them
+- **Best for:** When you want the AI to run the show, not just follow a script
+
+> 🎤 **Speaker note:** "Notice the progression here. Make.com and Zapier are brilliant for 'when X happens, do Y.' Power Automate is the same but for Microsoft shops. n8n is for techies who want control. But OpenClaw flips the model — instead of you building the workflow, the AI builds it on the fly based on what you need. That's the direction everything is heading."
+
+---
+
+### Part 3: AI + Workflows = The Real Power
+
+Here's the key insight I want you to take away:
+
+| On Its Own | What It Does Well | What It Can't Do |
+|-----------|-------------------|-----------------|
+| **AI alone** (ChatGPT, Claude) | Thinks, writes, analyses | You have to manually copy-paste everything in and out. It can't *do* things in your apps. |
+| **Workflows alone** (Zapier, Make) | Connects apps, moves data, follows rules automatically | Follows rigid rules. Can't think, adapt, or handle edge cases. |
+| **AI + Workflows** | Connects apps AND thinks. Handles edge cases. Makes intelligent decisions within automated processes. | This is the magic combination. |
+
+**A real-world example:**
+
+> "Every Monday morning at 7am:
+> 1. Pull my calendar for the week
+> 2. Check which meetings need preparation documents
+> 3. Pull the latest project data from our tools
+> 4. Draft prep docs for each meeting
+> 5. Save them in my Google Drive
+> 6. If anything looks urgent, Slack me immediately"
+
+That's **six different apps**, **AI reasoning**, and **conditional logic** — running automatically while you sleep on Sunday night.
+
+Without AI, a workflow tool could do steps 1 and maybe 2 (if you've tagged meetings manually). With AI in the loop, it can *read* the meeting descriptions, *understand* what kind of prep is needed, *find* the relevant data, and *write* something useful.
+
+> 💡 **What this means for you:** You don't have to choose between AI and workflow automation. The real power is using them together. Start with a simple workflow (even just "email me a summary of my day"), then add AI steps as you get comfortable.
+
+> 🎤 **Speaker note:** "This example always gets people. Because this isn't science fiction — every single piece of this is available today. The tools exist. The AI exists. The connections exist. The only thing missing is someone sitting down for an afternoon and setting it up. And that's exactly what we help businesses do."
+
+---
+
+### Part 4: Choosing the Right Tool
+
+Don't overthink it. Here's the quick decision guide:
+
+| Your Situation | Start With | Why |
+|---------------|------------|-----|
+| 🏢 Your company runs on Microsoft 365 | **Power Automate** | It's already included in your licence. Deep Outlook/Teams integration. |
+| 🎯 You want the simplest possible start | **Make.com** | Friendliest interface, lots of templates, great free tier. |
+| 🔗 You need to connect obscure/niche apps | **Zapier** | 6,000+ integrations — the biggest library by far. |
+| 🔧 You're technical and want full control | **n8n** | Open-source, self-hosted, your data stays with you. |
+| 🤖 You want AI to run the show | **OpenClaw** | AI-native — the agent decides what to do, not a rigid workflow. |
+| 🌱 You're just starting and don't know | **Make.com** | Start here. Upgrade later if you outgrow it. |
+
+> 💡 **What this means for you:** You can start with *any* of these today — most have free tiers. Pick the one closest to your world and try automating one thing. Just one. You'll be hooked.
+
+> 🎤 **Speaker note:** "My advice? Don't try to automate everything on day one. Pick one thing that annoys you — something you do every week that's repetitive and boring. Automate that. Once you see it working, you'll start spotting opportunities everywhere. That's how it starts."
+
+---
+
+### Quick Summary
+
+| Tool | Price | Integrations | AI? | Technical Level | Best For |
+|------|-------|-------------|-----|----------------|----------|
+| **Make.com** | Free / $9+/mo | 1,500+ | ✅ Built-in | 🟢 Easy | Beginners, visual thinkers |
+| **Zapier** | Free / $20+/mo | 6,000+ | ✅ Available | 🟢 Easy | Widest app support |
+| **Power Automate** | Often included in M365 | Microsoft-deep | ✅ AI Builder | 🟡 Medium | Microsoft shops |
+| **n8n** | Free (self-host) / $20+/mo | 400+ | ✅ Full | 🔴 Technical | Full control, privacy |
+| **OpenClaw** | Free (open-source) | Via MCP/skills | ✅ AI-native | 🔴 Technical | AI-first automation |
+
+> 🎤 **Speaker note (transition):** "Right — so that's the automation landscape. You've got the full picture now: what AI can do, how it connects to your tools, and how you can automate entire workflows. Now let me show you the specific tools that bring this to life for everyday work — and then we'll get into the live demos."
+
+---
+
+## SLIDE 7 — AI Beyond Chat: Tools for Non-Technical Work
 
 > 🎤 **Speaker note:** "Now, AI isn't just a chatbot you ask questions to. There are tools that embed AI into the work you're already doing. Here are three worth knowing about."
 
@@ -270,7 +404,7 @@ One last concept: just like your phone has an app store, AI tools are getting th
 
 ---
 
-## SLIDE 7 — Five Things You're About to See Me Do Live
+## SLIDE 8 — Five Things You're About to See Me Do Live
 
 > 🎤 **Speaker note:** "Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, Claude, and a business problem. Each one demonstrates a different AI capability."
 

@@ -874,10 +874,280 @@
     </div>
   </section>
 
-  <!-- SLIDE 6: AI Beyond Chat -->
-  <section id="slide-6">
+  <!-- SLIDE 6: Workflow Automation -->
+  <section id="slide-workflows">
     <div class="slide-header">
       <span class="slide-num">6</span>
+      <h2>Putting It All Together: Workflow Automation</h2>
+    </div>
+    <div class="speaker-note">
+      Alright, so we've covered what AI can do, what it can't do, and how it connects to your tools through MCP. Now here's the really exciting bit — what happens when you chain all of this together into workflows that run <em>without you</em>? This is where AI goes from 'a clever tool I use sometimes' to 'a system that works for me while I sleep.'
+    </div>
+
+    <!-- Part 1: What Are Workflow Automation Tools? -->
+    <h3>🔄 What Are Workflow Automation Tools?</h3>
+    <p>You know how you might set a rule in your email: "If an email comes from this address, move it to this folder"? Workflow automation tools are that idea, but on steroids.</p>
+    <p>Instead of one simple rule, you build a <em>chain</em> of actions:</p>
+
+    <div class="key-concept" style="text-align:left;">
+      <h4 style="margin-top:0; text-align:center; color:var(--amber);">Example Workflow</h4>
+      <p style="margin-bottom:8px;">📧 When I get an email from a client</p>
+      <p style="margin-bottom:8px;">→ 🔍 Extract the key information</p>
+      <p style="margin-bottom:8px;">→ 📋 Update my CRM</p>
+      <p style="margin-bottom:8px;">→ ✍️ Draft a reply</p>
+      <p style="margin-bottom:0;">→ ✅ Send it to me for approval</p>
+    </div>
+
+    <p>That's five steps, across three different apps, happening automatically. These tools have been around for years. But here's what's new: <strong>you can now add AI as a step in the chain.</strong> That means your automation can <em>think</em>, not just follow rigid rules.</p>
+
+    <div class="recommendation" style="border-color:var(--accent);">
+      <h4 style="color:var(--accent);">💡 What This Means For You</h4>
+      <p style="margin-bottom:0;">Workflow automation isn't new. But workflow automation that can <em>reason</em> — that understands context, drafts intelligent responses, and makes judgment calls — that's brand new. And it's available right now.</p>
+    </div>
+
+    <div class="speaker-note">
+      Think of it this way. The old version: 'When I get an email, file it in this folder.' The new version: 'When I get an email, read it, figure out if it's urgent, draft an appropriate reply, update my project tracker, and let me know if I need to do anything.' Same trigger — wildly different outcome.
+    </div>
+
+    <!-- Part 2: The Main Players -->
+    <h3>🛠️ The Main Players</h3>
+    <p>Here's a quick tour of the tools you can use today — ordered from simplest to most powerful:</p>
+
+    <div class="use-case">
+      <h4 style="color:var(--green);">Make.com <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">(formerly Integromat)</span></h4>
+      <span class="tool-badge">1,500+ Apps</span>
+      <span class="capability-badge">AI Modules Built In</span>
+      <ul>
+        <li><strong>What it is:</strong> A visual workflow builder — you literally drag and drop to create automations</li>
+        <li><strong>AI capability:</strong> Add a "call Claude" or "call GPT" step to any workflow</li>
+        <li><strong>Cost:</strong> Free tier available, Pro from ~$9/month</li>
+        <li><strong>Best for:</strong> Non-technical users. Lots of ready-made templates. Friendliest interface.</li>
+        <li><strong>Limitation:</strong> Cloud-only — your data goes through their servers</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4 style="color:var(--green);">Zapier</h4>
+      <span class="tool-badge">6,000+ Apps</span>
+      <span class="capability-badge">AI Actions Available</span>
+      <ul>
+        <li><strong>What it is:</strong> The original workflow automation tool. The biggest integration library on the planet.</li>
+        <li><strong>AI capability:</strong> AI actions to process data within a "Zap"</li>
+        <li><strong>Cost:</strong> Free tier (limited), paid from ~$20/month</li>
+        <li><strong>Best for:</strong> Simple automations with the widest app support. "I need X to talk to Y" — Zapier probably has it.</li>
+        <li><strong>Limitation:</strong> Can get expensive as you add more workflows; AI features are newer</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4 style="color:var(--green);">Microsoft Power Automate</h4>
+      <span class="tool-badge">Microsoft 365 Native</span>
+      <span class="capability-badge">AI Builder</span>
+      <ul>
+        <li><strong>What it is:</strong> Microsoft's workflow tool, built right into Microsoft 365</li>
+        <li><strong>AI capability:</strong> AI Builder for document processing, text analysis</li>
+        <li><strong>Cost:</strong> Included with many M365 business licences — you might already have it</li>
+        <li><strong>Best for:</strong> Companies already in the Microsoft ecosystem (Outlook, Teams, SharePoint)</li>
+        <li><strong>Limitation:</strong> Strongest within Microsoft; connecting to non-Microsoft apps is less seamless</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4 style="color:var(--green);">n8n <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">(open-source)</span></h4>
+      <span class="tool-badge">400+ Integrations</span>
+      <span class="capability-badge">Full AI Integration</span>
+      <ul>
+        <li><strong>What it is:</strong> A visual workflow builder like Make.com, but open-source and self-hostable</li>
+        <li><strong>AI capability:</strong> Call Claude, GPT, or any model as a workflow step</li>
+        <li><strong>Cost:</strong> Free if you self-host; cloud version from ~$20/month</li>
+        <li><strong>Best for:</strong> Technical users who want full control. Your data stays on your own servers.</li>
+        <li><strong>Limitation:</strong> Requires more technical knowledge to set up and maintain</li>
+      </ul>
+    </div>
+
+    <div class="use-case" style="border-color:var(--accent);">
+      <h4 style="color:var(--accent);">OpenClaw <span style="font-size:0.85rem; color:var(--text-muted); font-weight:400;">(the AI-native approach)</span></h4>
+      <span class="tool-badge">MCP + Skills</span>
+      <span class="capability-badge">AI Is the Orchestrator</span>
+      <ul>
+        <li><strong>What it is:</strong> Not a traditional workflow tool — it's an AI agent that <em>uses</em> tools</li>
+        <li><strong>The difference:</strong> In Make.com or Zapier, AI is a step in your workflow. In OpenClaw, AI is the <em>orchestrator</em> — it decides what to do, in what order, based on the situation</li>
+        <li><strong>How it works:</strong> Install "skills" (capabilities) and the AI figures out when and how to use them</li>
+        <li><strong>Best for:</strong> When you want the AI to run the show, not just follow a script</li>
+      </ul>
+    </div>
+
+    <div class="speaker-note">
+      Notice the progression here. Make.com and Zapier are brilliant for 'when X happens, do Y.' Power Automate is the same but for Microsoft shops. n8n is for techies who want control. But OpenClaw flips the model — instead of you building the workflow, the AI builds it on the fly based on what you need. That's the direction everything is heading.
+    </div>
+
+    <!-- Part 3: AI + Workflows = The Real Power -->
+    <h3>⚡ AI + Workflows = The Real Power</h3>
+    <p>Here's the key insight:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Approach</th><th>What It Does Well</th><th>What It Can't Do</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>AI alone</strong><br><span style="font-size:0.85rem;color:var(--text-muted)">ChatGPT, Claude</span></td>
+            <td>Thinks, writes, analyses</td>
+            <td style="color:var(--pink);">You have to manually copy-paste everything in and out. It can't <em>do</em> things in your apps.</td>
+          </tr>
+          <tr>
+            <td><strong>Workflows alone</strong><br><span style="font-size:0.85rem;color:var(--text-muted)">Zapier, Make</span></td>
+            <td>Connects apps, moves data, follows rules automatically</td>
+            <td style="color:var(--pink);">Follows rigid rules. Can't think, adapt, or handle edge cases.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--green);">AI + Workflows</strong><br><span style="font-size:0.85rem;color:var(--text-muted)">The magic combination</span></td>
+            <td style="color:var(--green);">Connects apps <strong>AND</strong> thinks. Handles edge cases. Makes intelligent decisions within automated processes.</td>
+            <td>This is where everything is heading.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="key-concept" style="text-align:left;">
+      <h4 style="margin-top:0; text-align:center; color:var(--amber);">Real-World Example</h4>
+      <p style="margin-bottom:6px;"><strong>Every Monday morning at 7am:</strong></p>
+      <p style="margin-bottom:6px;">1️⃣ Pull my calendar for the week</p>
+      <p style="margin-bottom:6px;">2️⃣ Check which meetings need prep documents</p>
+      <p style="margin-bottom:6px;">3️⃣ Pull the latest project data from our tools</p>
+      <p style="margin-bottom:6px;">4️⃣ Draft prep docs for each meeting</p>
+      <p style="margin-bottom:6px;">5️⃣ Save them in my Google Drive</p>
+      <p style="margin-bottom:0;">6️⃣ If anything looks urgent, Slack me immediately</p>
+    </div>
+
+    <p>That's <strong>six different apps</strong>, <strong>AI reasoning</strong>, and <strong>conditional logic</strong> — running automatically while you sleep on Sunday night.</p>
+    <p>Without AI, a workflow tool could do steps 1 and maybe 2 (if you've tagged meetings manually). With AI in the loop, it can <em>read</em> the meeting descriptions, <em>understand</em> what kind of prep is needed, <em>find</em> the relevant data, and <em>write</em> something useful.</p>
+
+    <div class="recommendation" style="border-color:var(--green);">
+      <h4 style="color:var(--green);">💡 What This Means For You</h4>
+      <p style="margin-bottom:0;">You don't have to choose between AI and workflow automation. The real power is using them together. Start with a simple workflow (even just "email me a summary of my day"), then add AI steps as you get comfortable.</p>
+    </div>
+
+    <div class="speaker-note">
+      This example always gets people. Because this isn't science fiction — every single piece of this is available today. The tools exist. The AI exists. The connections exist. The only thing missing is someone sitting down for an afternoon and setting it up. And that's exactly what we help businesses do.
+    </div>
+
+    <!-- Part 4: Choosing the Right Tool -->
+    <h3>🧭 Choosing the Right Tool</h3>
+    <p>Don't overthink it. Here's the quick decision guide:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Your Situation</th><th>Start With</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🏢 Your company runs on Microsoft 365</td>
+            <td><strong style="color:var(--accent);">Power Automate</strong></td>
+            <td>Already included in your licence. Deep Outlook/Teams integration.</td>
+          </tr>
+          <tr>
+            <td>🎯 You want the simplest possible start</td>
+            <td><strong style="color:var(--accent);">Make.com</strong></td>
+            <td>Friendliest interface, lots of templates, great free tier.</td>
+          </tr>
+          <tr>
+            <td>🔗 You need to connect obscure/niche apps</td>
+            <td><strong style="color:var(--accent);">Zapier</strong></td>
+            <td>6,000+ integrations — the biggest library by far.</td>
+          </tr>
+          <tr>
+            <td>🔧 You're technical and want full control</td>
+            <td><strong style="color:var(--accent);">n8n</strong></td>
+            <td>Open-source, self-hosted, your data stays with you.</td>
+          </tr>
+          <tr>
+            <td>🤖 You want AI to run the show</td>
+            <td><strong style="color:var(--accent);">OpenClaw</strong></td>
+            <td>AI-native — the agent decides what to do, not a rigid workflow.</td>
+          </tr>
+          <tr>
+            <td>🌱 Just starting and not sure?</td>
+            <td><strong style="color:var(--green);">Make.com</strong></td>
+            <td>Start here. Upgrade later if you outgrow it.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="recommendation" style="border-color:var(--purple);">
+      <h4 style="color:var(--purple);">💡 What This Means For You</h4>
+      <p style="margin-bottom:0;">You can start with <em>any</em> of these today — most have free tiers. Pick the one closest to your world and try automating one thing. Just one. You'll be hooked.</p>
+    </div>
+
+    <div class="speaker-note">
+      My advice? Don't try to automate everything on day one. Pick one thing that annoys you — something you do every week that's repetitive and boring. Automate that. Once you see it working, you'll start spotting opportunities everywhere. That's how it starts.
+    </div>
+
+    <!-- Quick Summary Table -->
+    <h3>📊 Quick Comparison</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tool</th><th>Price</th><th>Integrations</th><th>AI?</th><th>Difficulty</th><th>Best For</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Make.com</strong></td>
+            <td>Free / $9+/mo</td>
+            <td>1,500+</td>
+            <td style="color:var(--green);">✅ Built-in</td>
+            <td>🟢 Easy</td>
+            <td>Beginners, visual thinkers</td>
+          </tr>
+          <tr>
+            <td><strong>Zapier</strong></td>
+            <td>Free / $20+/mo</td>
+            <td>6,000+</td>
+            <td style="color:var(--green);">✅ Available</td>
+            <td>🟢 Easy</td>
+            <td>Widest app support</td>
+          </tr>
+          <tr>
+            <td><strong>Power Automate</strong></td>
+            <td>Often included in M365</td>
+            <td>Microsoft-deep</td>
+            <td style="color:var(--green);">✅ AI Builder</td>
+            <td>🟡 Medium</td>
+            <td>Microsoft shops</td>
+          </tr>
+          <tr>
+            <td><strong>n8n</strong></td>
+            <td>Free (self-host) / $20+/mo</td>
+            <td>400+</td>
+            <td style="color:var(--green);">✅ Full</td>
+            <td>🔴 Technical</td>
+            <td>Full control, privacy</td>
+          </tr>
+          <tr>
+            <td><strong>OpenClaw</strong></td>
+            <td>Free (open-source)</td>
+            <td>Via MCP/skills</td>
+            <td style="color:var(--green);">✅ AI-native</td>
+            <td>🔴 Technical</td>
+            <td>AI-first automation</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="speaker-note">
+      Right — so that's the automation landscape. You've got the full picture now: what AI can do, how it connects to your tools, and how you can automate entire workflows. Now let me show you the specific tools that bring this to life for everyday work — and then we'll get into the live demos.
+    </div>
+  </section>
+
+  <!-- SLIDE 7: AI Beyond Chat -->
+  <section id="slide-7">
+    <div class="slide-header">
+      <span class="slide-num">7</span>
       <h2>AI Beyond Chat: Tools for Non-Technical Work</h2>
     </div>
     <div class="speaker-note">
@@ -936,10 +1206,10 @@
     </div>
   </section>
 
-  <!-- SLIDE 7: Five Things Live -->
-  <section id="slide-7">
+  <!-- SLIDE 8: Five Things Live -->
+  <section id="slide-8">
     <div class="slide-header">
-      <span class="slide-num">7</span>
+      <span class="slide-num">8</span>
       <h2>Five Things You're About to See Me Do Live</h2>
     </div>
     <div class="speaker-note">
