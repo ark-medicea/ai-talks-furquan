@@ -1215,8 +1215,175 @@
       The takeaway: AI isn't just a chatbot. These tools embed AI into the work you're already doing. Claude Co-work can now read your local files and generate actual Excel and PowerPoint documents. OpenClaw can access everything on your machine. The gap between 'talking to an AI' and 'AI doing the work' is closing fast.
     </div>
 
+  </section>
+
+  <!-- SLIDE 7: Prompt Engineering -->
+  <section id="slide-7">
+    <div class="slide-header">
+      <span class="slide-num">7</span>
+      <h2>The Skill That Matters Most: Prompt Engineering</h2>
+    </div>
+    <div class="speaker-note">
+      Right — we've covered the landscape, the tools, the costs, what AI can do, what it can't, workflows, and the apps that bring it all together. Now I want to leave you with the single most important takeaway of the evening. If you only remember one thing from tonight — make it this.
+    </div>
+
+    <!-- Part 1: Why Prompting Matters -->
+    <h3>🎯 Why Prompting Matters</h3>
+    <p>The same AI model gives wildly different results depending on how you ask. A bad prompt produces generic, useless output. A good prompt produces impressive, specific, ready-to-use output.</p>
+    <p>Think of it like Google. Twenty years ago, people who learned to search effectively had a massive advantage. Prompting is the same thing — but higher stakes, because the output is richer and more powerful.</p>
+
+    <div class="key-concept">
+      <h3>This is the ONE skill that transfers across every AI tool.</h3>
+      <p style="color:var(--text-muted); font-size:1.05rem; max-width:640px; margin:16px auto 0;">
+        Models change. Interfaces change. The ability to communicate clearly with AI? That's permanent.
+      </p>
+    </div>
+
+    <div class="speaker-note">
+      I've seen the same person, using the same AI model, get completely different results just by changing how they ask. One prompt gets a vague, useless paragraph. Another gets a perfectly structured, ready-to-send document. The difference isn't the AI — it's the prompt. And the good news? This is a learnable skill. By the end of this slide, you'll be better at it than 90% of people.
+    </div>
+
+    <!-- Part 2: The 6 Parts of a Great Prompt -->
+    <h3>🧩 The 6 Parts of a Great Prompt</h3>
+    <p>Based on best practices from Anthropic, OpenAI, and real-world business use — here's the anatomy of a prompt that actually works:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Part</th><th>What It Does</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">1</td>
+            <td><strong style="color:var(--green);">Role</strong></td>
+            <td>Tells the AI WHO it is — sets expertise level and perspective</td>
+            <td><em>"You are a senior financial analyst with 15 years of experience in UK manufacturing"</em></td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">2</td>
+            <td><strong style="color:var(--green);">Context</strong></td>
+            <td>Gives background information — AI can't read your mind</td>
+            <td><em>"I run a £5M manufacturing business. We're preparing for a board meeting next week."</em></td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">3</td>
+            <td><strong style="color:var(--green);">Task</strong></td>
+            <td>Be specific about WHAT you want — vague asks get vague answers</td>
+            <td><em>"Analyse this P&amp;L and identify the three biggest risks"</em> — NOT <em>"Look at this spreadsheet"</em></td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">4</td>
+            <td><strong style="color:var(--green);">Format</strong></td>
+            <td>Tells it HOW to present the output — saves you reformatting</td>
+            <td><em>"One-page executive summary with bullet points"</em> or <em>"Table with columns: Risk, Impact, Likelihood, Mitigation"</em></td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">5</td>
+            <td><strong style="color:var(--green);">Constraints</strong></td>
+            <td>Sets boundaries — stops AI from going off-piste</td>
+            <td><em>"Keep it under 500 words" / "Use formal business English" / "Don't make assumptions beyond the data"</em></td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;color:var(--accent);">6</td>
+            <td><strong style="color:var(--green);">Examples</strong></td>
+            <td>Shows what good looks like — AI learns from examples better than instructions</td>
+            <td><em>"Here's an example of the tone I want: [paste example]"</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="optional" style="background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.3); color:var(--accent);">
+      <strong>Memory aid: R-C-T-F-C-E</strong> — <em>"Really Clear Tasks Fix Common Errors"</em>
+    </div>
+
+    <div class="speaker-note">
+      You don't need all six every time. But the more of these you include, the better your results. Role and Task are the essentials. Context makes it relevant. Format saves you time. Constraints keep it on track. And examples — honestly, one good example is worth a hundred words of instruction. Let me show you what this looks like in practice.
+    </div>
+
+    <!-- Part 3: Before & After -->
+    <h3>🔄 Before &amp; After — The Dramatic Difference</h3>
+
+    <div class="use-case" style="border-color:var(--pink);">
+      <h4 style="color:var(--pink);">❌ Bad Prompt</h4>
+      <p style="font-size:1.15rem; font-style:italic; padding:12px 20px; background:rgba(244,114,182,0.08); border-radius:8px; margin-bottom:12px;">"Write me a contract"</p>
+      <p style="color:var(--text-muted); margin-bottom:0;"><strong>What you get:</strong> Generic, probably American legal language, missing key terms, no specific parties, no jurisdiction. Useless without major rewriting.</p>
+    </div>
+
+    <div class="use-case" style="border-color:var(--green);">
+      <h4 style="color:var(--green);">✅ Good Prompt</h4>
+      <p style="font-size:1rem; font-style:italic; padding:12px 20px; background:rgba(74,222,128,0.08); border-radius:8px; margin-bottom:12px;">"You are a UK commercial solicitor. Draft a professional services agreement between Enriched Solutions Ltd (consultant) and Aether Technologies Ltd (client) for a 6-month AI strategy advisory engagement. Fee: £45,000 + VAT, payable monthly. Include clauses for: IP assignment to client, GDPR data processing, 30-day termination notice, key personnel. Use formal but readable English. Format as a Word-ready document with numbered clauses."</p>
+      <p style="color:var(--text-muted); margin-bottom:0;"><strong>What you get:</strong> Specific, jurisdiction-aware, properly structured, includes all requested clauses. Ready to review with your solicitor. Saves hours of drafting.</p>
+    </div>
+
+    <div class="recommendation" style="border-color:var(--amber);">
+      <h4 style="color:var(--amber);">🔍 What Changed?</h4>
+      <p style="margin-bottom:0;">The good prompt includes: <strong style="color:var(--green);">Role</strong> (UK solicitor), <strong style="color:var(--green);">Context</strong> (the parties, the engagement), <strong style="color:var(--green);">Task</strong> (draft an agreement), <strong style="color:var(--green);">Format</strong> (numbered clauses, Word-ready), and <strong style="color:var(--green);">Constraints</strong> (formal but readable, specific clauses). Same AI. Same subscription. Completely different result.</p>
+    </div>
+
+    <div class="speaker-note">
+      Look at the difference. Same AI. Same model. Same £16 subscription. The only thing that changed is how you asked. The bad prompt takes 30 seconds to write and gives you something you'll throw away. The good prompt takes 2 minutes to write and gives you something you can actually use. That's the trade-off — and it's not even close.
+    </div>
+
+    <!-- Part 4: Pro Tips -->
+    <h3>⚡ Pro Tips — Quick-Fire</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tip</th><th>What It Means</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--accent);">Iterate</strong></td>
+            <td>Your first prompt is a draft. Read the output, then refine. <em>"That's good, but make the tone more formal and add a section on payment terms."</em></td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--accent);">Be Specific</strong></td>
+            <td>"Analyse" is vague. "Calculate gross margin, EBITDA, and cash burn rate for Q1–Q4" is actionable.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--accent);">Give Examples</strong></td>
+            <td>One good example of the tone, format, or style you want is worth 100 words of instruction.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--accent);">Say What You Don't Want</strong></td>
+            <td>"Don't use bullet points" / "Don't make up data" / "Don't include American spelling or legal conventions"</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--accent);">Chain Prompts</strong></td>
+            <td>Break complex tasks into steps. Get the research right first, THEN write the report. Don't ask for everything in one go.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--accent);">Think Step by Step</strong></td>
+            <td>For complex reasoning, explicitly ask the AI to show its working. It genuinely produces better results.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="speaker-note">
+      These are the tips that separate good from great. The biggest one? Iterate. Nobody writes a perfect email on the first draft — don't expect a perfect prompt on the first try either. Send it, read the output, refine. Three rounds of prompting beats one 'perfect' prompt every time. And chaining — if you need a 20-page report, don't ask for it all at once. Ask for the research, review it, then ask for the outline, then write section by section. You'll get dramatically better results.
+    </div>
+
+    <!-- Part 5: The Takeaway -->
+    <h3>🏆 The Takeaway</h3>
+
+    <div class="key-concept">
+      <h3>Prompt engineering is the new professional literacy.</h3>
+      <p style="color:var(--text-muted); font-size:1.05rem; max-width:640px; margin:16px auto 0;">
+        The people who get extraordinary results from AI aren't using a secret tool. They're just asking better questions.
+      </p>
+    </div>
+
+    <p>Every AI tool you'll ever use — ChatGPT, Claude, Gemini, whatever comes next — responds to the same principles. Learn to prompt well once, and you've future-proofed yourself.</p>
+
+    <div class="speaker-note">
+      If you take one thing away from tonight, make it this: the AI is only as good as what you give it. Spend 2 minutes thinking about your prompt instead of 2 seconds, and you'll get results that genuinely feel like magic. This is a skill. Practice it. Get good at it. It's the highest-leverage thing you can learn right now. Right — with that, let me hand over to the live workshop where you're going to try this for yourselves.
+    </div>
+
     <div class="talk-links" style="margin-top:32px;">
-      <a href="workshop.html" class="talk-link primary">Continue to Live Workshop →</a>
+      <a href="workshop.html" class="talk-link primary">Now Let's Try It Live — Workshop →</a>
     </div>
   </section>
 

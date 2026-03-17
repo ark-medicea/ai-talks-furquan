@@ -17,6 +17,7 @@
 | 4 | "What Can AI Actually Do?" — capabilities, MCP, skills | 3 min |
 | 5 | "Putting It All Together" — workflow automation | 2 min |
 | 6 | "AI Beyond Chat" — non-technical tools comparison | 2 min |
+| 7 | "The Skill That Matters Most" — prompt engineering | 3 min |
 
 ---
 
@@ -394,6 +395,88 @@ Don't overthink it. Here's the quick decision guide:
 | **Limitations** | Tied to Anthropic's ecosystem; requires Claude subscription for full features | Requires some technical setup; self-hosted means you manage it | Only works within Notion; limited outside that ecosystem |
 
 > 🎤 **Speaker note:** "The takeaway: AI isn't just a chatbot. These tools embed AI into the work you're already doing. Claude Co-work can now read your local files and generate actual Excel and PowerPoint documents. OpenClaw can access everything on your machine. The gap between 'talking to an AI' and 'AI doing the work' is closing fast."
+
+---
+
+## SLIDE 7 — The Skill That Matters Most: Prompt Engineering
+
+> 🎤 **Speaker note:** "Right — we've covered the landscape, the tools, the costs, what AI can do, what it can't, workflows, and the apps that bring it all together. Now I want to leave you with the single most important takeaway of the evening. If you only remember one thing from tonight — make it this."
+
+---
+
+### Part 1: Why Prompting Matters
+
+The same AI model gives wildly different results depending on how you ask. A bad prompt produces generic, useless output. A good prompt produces impressive, specific, ready-to-use output.
+
+Think of it like Google. Twenty years ago, people who learned to search effectively had a massive advantage. Prompting is the same thing — but higher stakes, because the output is richer and more powerful.
+
+**This is the ONE skill that transfers across every AI tool.** Models change. Interfaces change. The ability to communicate clearly with AI? That's permanent.
+
+> 🎤 **Speaker note:** "I've seen the same person, using the same AI model, get completely different results just by changing how they ask. One prompt gets a vague, useless paragraph. Another gets a perfectly structured, ready-to-send document. The difference isn't the AI — it's the prompt. And the good news? This is a learnable skill. By the end of this slide, you'll be better at it than 90% of people."
+
+---
+
+### Part 2: The 6 Parts of a Great Prompt
+
+Based on best practices from Anthropic, OpenAI, and real-world business use — here's the anatomy of a prompt that actually works:
+
+| # | Part | What It Does | Example |
+|---|------|-------------|---------|
+| 1 | **Role** | Tells the AI WHO it is — sets expertise level and perspective | *"You are a senior financial analyst with 15 years of experience in UK manufacturing"* |
+| 2 | **Context** | Gives background information — AI can't read your mind | *"I run a £5M manufacturing business. We're preparing for a board meeting next week."* |
+| 3 | **Task** | Be specific about WHAT you want — vague asks get vague answers | *"Analyse this P&L and identify the three biggest risks"* — NOT *"Look at this spreadsheet"* |
+| 4 | **Format** | Tells it HOW to present the output — saves you reformatting later | *"Present as a one-page executive summary with bullet points, not paragraphs"* or *"Use a table with columns: Risk, Impact, Likelihood, Mitigation"* |
+| 5 | **Constraints** | Sets boundaries — stops AI from going off-piste | *"Keep it under 500 words" / "Use formal business English" / "Don't make assumptions beyond the data provided"* |
+| 6 | **Examples** | Shows what good looks like — AI learns from examples better than instructions | *"Here's an example of the tone I want: [paste example]"* |
+
+**Memory aid: R-C-T-F-C-E** — *"Really Clear Tasks Fix Common Errors"*
+
+> 🎤 **Speaker note:** "You don't need all six every time. But the more of these you include, the better your results. Role and Task are the essentials. Context makes it relevant. Format saves you time. Constraints keep it on track. And examples — honestly, one good example is worth a hundred words of instruction. Let me show you what this looks like in practice."
+
+---
+
+### Part 3: Before & After — The Dramatic Difference
+
+**❌ Bad prompt:**
+> "Write me a contract"
+
+**What you get:** Generic, probably American legal language, missing key terms, no specific parties, no jurisdiction, useless without major rewriting.
+
+---
+
+**✅ Good prompt:**
+> "You are a UK commercial solicitor. Draft a professional services agreement between Enriched Solutions Ltd (consultant) and Aether Technologies Ltd (client) for a 6-month AI strategy advisory engagement. Fee: £45,000 + VAT, payable monthly. Include clauses for: IP assignment to client, GDPR data processing, 30-day termination notice, key personnel. Use formal but readable English. Format as a Word-ready document with numbered clauses."
+
+**What you get:** Specific, jurisdiction-aware, properly structured, includes all requested clauses, ready to review with your solicitor. Saves hours of drafting.
+
+**What changed?** The good prompt includes: **Role** (UK solicitor), **Context** (the parties, the engagement), **Task** (draft an agreement), **Format** (numbered clauses, Word-ready), and **Constraints** (formal but readable, specific clauses).
+
+> 🎤 **Speaker note:** "Look at the difference. Same AI. Same model. Same £16 subscription. The only thing that changed is how you asked. The bad prompt takes 30 seconds to write and gives you something you'll throw away. The good prompt takes 2 minutes to write and gives you something you can actually use. That's the trade-off — and it's not even close."
+
+---
+
+### Part 4: Pro Tips — Quick-Fire
+
+- **Iterate** — Your first prompt is a draft. Read the output, then refine. "That's good, but make the tone more formal and add a section on payment terms."
+- **Be specific** — "Analyse" is vague. "Calculate gross margin, EBITDA, and cash burn rate for Q1–Q4" is actionable.
+- **Give examples** — One good example of the tone, format, or style you want is worth 100 words of instruction.
+- **Say what you DON'T want** — "Don't use bullet points" / "Don't make up data" / "Don't include American spelling or legal conventions"
+- **Chain prompts** — Break complex tasks into steps. Get the research right first, THEN write the report. Don't ask AI to do everything in one go.
+- **Use "think step by step"** — For complex reasoning, explicitly ask the AI to show its working. It genuinely produces better results.
+
+> 🎤 **Speaker note:** "These are the tips that separate good from great. The biggest one? Iterate. Nobody writes a perfect email on the first draft — don't expect a perfect prompt on the first try either. Send it, read the output, refine. Three rounds of prompting beats one 'perfect' prompt every time. And chaining — if you need a 20-page report, don't ask for it all at once. Ask for the research, review it, then ask for the outline, then write section by section. You'll get dramatically better results."
+
+---
+
+### Part 5: The Takeaway
+
+**Prompt engineering is the new professional literacy.**
+
+Every AI tool you'll ever use — ChatGPT, Claude, Gemini, whatever comes next — responds to the same principles. Learn to prompt well once, and you've future-proofed yourself.
+
+The people who get extraordinary results from AI aren't using a secret tool. They're just asking better questions.
+
+> 🎤 **Speaker note:** "If you take one thing away from tonight, make it this: the AI is only as good as what you give it. Spend 2 minutes thinking about your prompt instead of 2 seconds, and you'll get results that genuinely feel like magic. This is a skill. Practice it. Get good at it. It's the highest-leverage thing you can learn right now. Right — with that, let me hand over to the live workshop where you're going to try this for yourselves."
 
 ---
 
