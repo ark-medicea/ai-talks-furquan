@@ -180,14 +180,15 @@
     <p>Before going on stage, have everything ready:</p>
     <ul class="checklist">
       <li><strong>Claude</strong> — logged in at claude.ai, fresh chat ready, file upload tested</li>
+      <li><strong>ChatGPT</strong> — logged in at chatgpt.com, fresh chat ready (for Use Case 3 — image generation)</li>
       <li><strong>Excel file</strong> prepared (Use Case 1 — see Appendix A)</li>
       <li><strong>Engagement brief</strong> in a .txt or .docx (Use Case 2 — see Appendix B)</li>
       <li><strong>This document</strong> open on a second screen or phone for reference</li>
-      <li><strong>Browser tabs</strong> pre-opened: Claude (multiple fresh chats)</li>
+      <li><strong>Browser tabs</strong> pre-opened: Claude (multiple fresh chats), ChatGPT (one fresh chat)</li>
       <li><strong>Timer</strong> visible — keep yourself honest on pacing</li>
     </ul>
     <div class="one-tool-note">
-      💡 All five use cases run on Claude. One tool, one login, one subscription. That's the point.
+      💡 Four of five use cases run on Claude. Use Case 3 uses ChatGPT for image generation — use the best tool for each job.
     </div>
   </section>
 
@@ -408,20 +409,25 @@ Use formal legal English. Include standard boilerplate where appropriate. Make i
       <h2>Use Case 3: Brand Identity</h2>
       <span class="time-badge">⏱ 6 minutes</span>
     </div>
-    <span class="tool-badge">Claude (image generation + text)</span>
+    <span class="tool-badge">ChatGPT — GPT Image (visuals)</span>
+    <span class="tool-badge">Claude (brand guidelines)</span>
+
+    <div class="speaker-note">
+      This is the one demo where we switch tools — because image generation is ChatGPT's strength. Claude is fantastic for text, analysis, and documents, but ChatGPT has GPT Image built right in. Use the best tool for each job.
+    </div>
 
     <h3>Scenario</h3>
-    <p>Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. Claude can now generate images directly, so we'll do the visual assets and brand guidelines all in one place.</p>
+    <p>Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. We'll use <strong>ChatGPT</strong> for the visual assets (logo, icon, business card) and <strong>Claude</strong> for the brand guidelines document — best tool for each job.</p>
 
     <div class="step">
       <p><span class="step-num">1</span><strong>Set the scene</strong> (30 sec)</p>
       <div class="audience-note">
-        Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. And I'm using the same tool — Claude — which can now generate images as well as text.
+        Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. Now, this is the one demo where we switch tools — because image generation is ChatGPT's strength. Claude is brilliant for text and analysis, but ChatGPT has GPT Image built right in. Use the best tool for each job.
       </div>
     </div>
 
     <div class="step">
-      <p><span class="step-num">2</span><strong>Paste the primary prompt</strong></p>
+      <p><span class="step-num">2</span><strong>In ChatGPT — paste the primary prompt</strong></p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
 <pre>I'm building a brand identity for a startup called "Aether" — an AI-powered air quality monitoring platform for smart cities. The target audience is city councils, property developers, and health-conscious urban professionals. The brand should feel: clean, scientific, trustworthy, and slightly futuristic — but not cold or robotic. Think "calm technology."
@@ -441,7 +447,7 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
     <div class="step">
       <p><span class="step-num">3</span><strong>While image generates</strong> (~15–30 sec)</p>
       <div class="audience-note">
-        With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. And notice — same tool we used for the contract. One subscription, text and images.
+        With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. ChatGPT's image generation is available even on the free tier, which is fantastic.
       </div>
     </div>
 
@@ -453,7 +459,7 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
     </div>
 
     <div class="step">
-      <p><span class="step-num">5</span><strong>Follow-up prompt #1 — Simplify</strong></p>
+      <p><span class="step-num">5</span><strong>Follow-up prompt #1 — Simplify</strong> (still in ChatGPT)</p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
 <pre>I like the direction but I want it more minimal. Strip it back to just a clean icon mark — no text, no wordmark. The icon should work as a standalone app icon. Make it geometric, using only 2-3 colours. Think of how Airbnb's logo works as a simple, recognisable symbol. Keep the teal/blue palette.</pre>
@@ -461,10 +467,15 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
     </div>
 
     <div class="step">
-      <p><span class="step-num">6</span><strong>Follow-up prompt #2 — Brand System</strong></p>
+      <p><span class="step-num">6</span><strong>Switch to Claude — Brand System &amp; Guidelines</strong></p>
+      <div class="audience-note">
+        Now we switch back to Claude for the text-heavy work — building out the full brand system from the visual direction we just established in ChatGPT.
+      </div>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<pre>Now, based on this logo design, generate a complete brand colour palette and typography recommendation. Give me:
+<pre>I'm building a brand identity for a startup called "Aether" — an AI-powered air quality monitoring platform for smart cities. We've already created a minimal, geometric logo in teal/navy tones with a sky blue accent. The brand personality is "calm technology" — clean, scientific, trustworthy, slightly futuristic.
+
+Based on this direction, generate a complete brand colour palette and typography recommendation. Give me:
 - Primary colour (hex code)
 - Secondary colour (hex code)
 - Accent colour (hex code)
@@ -473,18 +484,24 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
 - Recommended heading font (from Google Fonts)
 - Recommended body font (from Google Fonts)
 
-Present this as a clean brand style guide section with colour swatches.</pre>
+Then write a comprehensive brand guidelines document including:
+- Brand voice and tone (with do's and don'ts)
+- Tagline: "Breathe smarter."
+- Usage guidelines for the logo
+- Colour usage rules
+
+Present this as a clean, professional brand style guide.</pre>
       </div>
       <div class="audience-note">
-        Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. Claude remembers the full context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible.
+        Notice we've gone from 'generate a logo' in ChatGPT to building out a whole brand system in Claude. Each tool does what it's best at. ChatGPT handles the visuals; Claude handles the writing and structure.
       </div>
     </div>
 
     <div class="step">
-      <p><span class="step-num">7</span><strong>Follow-up prompt #3 — Business Card</strong></p>
+      <p><span class="step-num">7</span><strong>Back to ChatGPT — Business Card</strong></p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<pre>Create a professional business card mockup for Aether using the logo and brand colours. The card should show:
+<pre>Create a professional business card mockup for Aether using the logo we created and the teal/navy brand colours. The card should show:
 - Front: Logo, company name "Aether", tagline "Breathe smarter."
 - Back: Name "Sarah Chen", title "Chief Technology Officer", email sarah@aether.io, phone +44 20 7946 0958, website aether.io
 - Clean, minimal design consistent with the brand identity we've built.</pre>
@@ -494,15 +511,15 @@ Present this as a clean brand style guide section with colour swatches.</pre>
     <div class="expected-output">
       <h4>✅ Expected Output</h4>
       <ul>
-        <li>Initial logo (icon + wordmark)</li>
-        <li>Refined minimal icon mark</li>
-        <li>Brand colour palette with hex codes and typography recommendations</li>
-        <li>Business card mockup</li>
+        <li>Initial logo (icon + wordmark) — from ChatGPT</li>
+        <li>Refined minimal icon mark — from ChatGPT</li>
+        <li>Brand colour palette with hex codes, typography, and full brand guidelines — from Claude</li>
+        <li>Business card mockup — from ChatGPT</li>
       </ul>
     </div>
 
     <div class="audience-note">
-      Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. All in one tool. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch.
+      Four prompts across two tools, four minutes — we've gone from a text description to a logo, colour palette, brand guidelines, and business card. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch. And the lesson: don't be afraid to use different tools for different strengths.
     </div>
   </section>
 
@@ -741,7 +758,7 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
     <div class="wrap-section">
       <h2>Wrap-Up</h2>
       <div class="audience-note">
-        So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude. One login, one subscription, five completely different business tasks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. <strong>AI is the accelerator. You're still the driver.</strong>
+        So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. We did almost all of them with Claude — plus ChatGPT for image generation. Two tools, both free to start, five completely different business tasks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. <strong>AI is the accelerator. You're still the driver.</strong>
       </div>
     </div>
   </section>
@@ -757,7 +774,7 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
         <tbody>
           <tr><td>1</td><td>Financial Analysis</td><td>Claude + Excel upload</td><td>7 min</td></tr>
           <tr><td>2</td><td>Contract Drafting</td><td>Claude</td><td>7 min</td></tr>
-          <tr><td>3</td><td>Brand Identity</td><td>Claude (image generation)</td><td>6 min</td></tr>
+          <tr><td>3</td><td>Brand Identity</td><td>ChatGPT (GPT Image) + Claude</td><td>6 min</td></tr>
           <tr><td>4</td><td>Market Research</td><td>Claude (web search)</td><td>8 min</td></tr>
           <tr><td>5</td><td>Pitch Deck</td><td>Claude (artifacts)</td><td>7 min</td></tr>
           <tr style="font-weight:700;"><td></td><td><strong>Total</strong></td><td></td><td><strong>~35 min</strong></td></tr>

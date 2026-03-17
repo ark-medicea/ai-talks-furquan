@@ -11,13 +11,14 @@
 Before going on stage, Ali needs:
 
 - [ ] **Claude** — logged in at claude.ai, fresh chat ready, file upload tested
+- [ ] **ChatGPT** — logged in at chatgpt.com, fresh chat ready (for Use Case 3 — image generation)
 - [ ] **Excel file** prepared (Use Case 1 — see Appendix A)
 - [ ] **Engagement brief** in a .txt or .docx (Use Case 2 — see Appendix B)
 - [ ] **This document** open on a second screen or phone for reference
-- [ ] **Browser tabs** pre-opened: Claude (multiple fresh chats)
+- [ ] **Browser tabs** pre-opened: Claude (multiple fresh chats), ChatGPT (one fresh chat)
 - [ ] **Timer** visible (phone or laptop widget) — keep yourself honest on pacing
 
-**Note:** All five use cases run on Claude. One tool, one login, one subscription. That's the point — you don't need five different AI accounts.
+**Note:** Four of the five use cases run on Claude. Use Case 3 (Brand Identity) uses ChatGPT for image generation — because that's where image gen shines. The point: use the best tool for each job.
 
 ---
 
@@ -211,19 +212,20 @@ Now simplify the entire contract's language. Rewrite it so that a non-lawyer bus
 Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. Show how AI generates visual assets from text descriptions.
 
 ### Tool
-**Claude** (claude.ai) — Claude can now generate images directly (as of early 2026). No need for a separate image generation tool. We'll use Claude for both the visual assets and the brand guidelines document — everything in one place.
+**ChatGPT** (chatgpt.com — GPT Image) for logo and visual generation, then **Claude** (claude.ai) for brand guidelines document. This is the one demo where we switch tools — because image generation is ChatGPT's strength.
 
 ### Prerequisites
 - [ ] Startup description ready (see **Appendix C**)
-- [ ] Claude open with a fresh conversation
+- [ ] ChatGPT open with a fresh conversation (for image generation)
+- [ ] Claude open with a fresh conversation (for brand guidelines)
 
 ### Steps
 
 **1. Set the scene (30 sec)**
 
-> **AUDIENCE NOTE:** "Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. And I'm using the same tool — Claude — which can now generate images as well as text."
+> **AUDIENCE NOTE:** "Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. Now, this is the one demo where we switch tools — because image generation is ChatGPT's strength. Claude is brilliant for text and analysis, but ChatGPT has GPT Image built right in. Use the best tool for each job."
 
-**2. Paste the primary prompt:**
+**2. In ChatGPT, paste the primary prompt:**
 
 ```
 I'm building a brand identity for a startup called "Aether" — an AI-powered air quality monitoring platform for smart cities. The target audience is city councils, property developers, and health-conscious urban professionals. The brand should feel: clean, scientific, trustworthy, and slightly futuristic — but not cold or robotic. Think "calm technology."
@@ -241,22 +243,26 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
 
 **3. While image generates (~15–30 sec), talk to audience:**
 
-> **AUDIENCE NOTE:** "With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. And notice — same tool we used for the contract. One subscription, text and images."
+> **AUDIENCE NOTE:** "With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. ChatGPT's image generation is available even on the free tier, which is fantastic."
 
 **4. Show the generated logo. React to it honestly.**
 
 > **AUDIENCE NOTE:** "Now, is this going to win a design award? Probably not. But as a starting point — something to show a designer and say 'this direction' — it's genuinely useful. And watch what happens when we iterate..."
 
-**5. Paste follow-up prompt #1:**
+**5. Paste follow-up prompt #1 (still in ChatGPT):**
 
 ```
 I like the direction but I want it more minimal. Strip it back to just a clean icon mark — no text, no wordmark. The icon should work as a standalone app icon. Make it geometric, using only 2-3 colours. Think of how Airbnb's logo works as a simple, recognisable symbol. Keep the teal/blue palette.
 ```
 
-**6. Paste follow-up prompt #2:**
+**6. Now switch to Claude. Paste follow-up prompt #2:**
+
+> **AUDIENCE NOTE:** "Now we switch back to Claude for the text-heavy work — building out the full brand system from the visual direction we just established in ChatGPT."
 
 ```
-Now, based on this logo design, generate a complete brand colour palette and typography recommendation. Give me:
+I'm building a brand identity for a startup called "Aether" — an AI-powered air quality monitoring platform for smart cities. We've already created a minimal, geometric logo in teal/navy tones with a sky blue accent. The brand personality is "calm technology" — clean, scientific, trustworthy, slightly futuristic.
+
+Based on this direction, generate a complete brand colour palette and typography recommendation. Give me:
 - Primary colour (hex code)
 - Secondary colour (hex code)
 - Accent colour (hex code)
@@ -265,29 +271,35 @@ Now, based on this logo design, generate a complete brand colour palette and typ
 - Recommended heading font (from Google Fonts)
 - Recommended body font (from Google Fonts)
 
-Present this as a clean brand style guide section with colour swatches.
+Then write a comprehensive brand guidelines document including:
+- Brand voice and tone (with do's and don'ts)
+- Tagline: "Breathe smarter."
+- Usage guidelines for the logo
+- Colour usage rules
+
+Present this as a clean, professional brand style guide.
 ```
 
-> **AUDIENCE NOTE:** "Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. Claude remembers the full context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible."
+> **AUDIENCE NOTE:** "Notice we've gone from 'generate a logo' in ChatGPT to building out a whole brand system in Claude. Each tool does what it's best at. ChatGPT handles the visuals; Claude handles the writing and structure."
 
-**7. Paste follow-up prompt #3:**
+**7. Paste follow-up prompt #3 (in ChatGPT — switch back for the visual):**
 
 ```
-Create a professional business card mockup for Aether using the logo and brand colours. The card should show:
+Create a professional business card mockup for Aether using the logo we created and the teal/navy brand colours. The card should show:
 - Front: Logo, company name "Aether", tagline "Breathe smarter."
 - Back: Name "Sarah Chen", title "Chief Technology Officer", email sarah@aether.io, phone +44 20 7946 0958, website aether.io
 - Clean, minimal design consistent with the brand identity we've built.
 ```
 
 ### Expected Output
-- Initial logo (icon + wordmark)
-- Refined minimal icon mark
-- Brand colour palette with hex codes and typography recommendations
-- Business card mockup
+- Initial logo (icon + wordmark) — from ChatGPT
+- Refined minimal icon mark — from ChatGPT
+- Brand colour palette with hex codes, typography, and full brand guidelines — from Claude
+- Business card mockup — from ChatGPT
 
 ### Talking Point for Transition
 
-> **AUDIENCE NOTE:** "Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. All in one tool. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch."
+> **AUDIENCE NOTE:** "Four prompts across two tools, four minutes — we've gone from a text description to a logo, colour palette, brand guidelines, and business card. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch. And the lesson: don't be afraid to use different tools for different strengths."
 
 ---
 
@@ -487,7 +499,7 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
 
 ## Transition to Wrap-Up
 
-> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude. One login, one subscription, five completely different business tasks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
+> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. We did almost all of them with Claude — plus ChatGPT for image generation. Two tools, both free to start, five completely different business tasks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
 
 ---
 
@@ -624,7 +636,7 @@ and a commercial lead from Octopus Energy).
 |----------|-------|------|------|
 | 1 | Financial Analysis | Claude + Excel upload | 7 min |
 | 2 | Contract Drafting | Claude | 7 min |
-| 3 | Brand Identity | Claude (image generation) | 6 min |
+| 3 | Brand Identity | ChatGPT (GPT Image) + Claude (guidelines) | 6 min |
 | 4 | Market Research | Claude (web search) | 8 min |
 | 5 | Pitch Deck | Claude (artifacts) | 7 min |
 | — | **Total** | — | **~35 min** |
