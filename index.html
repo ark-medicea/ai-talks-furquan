@@ -16,6 +16,7 @@
     --green: #4ade80;
     --amber: #fbbf24;
     --pink: #f472b6;
+    --purple: #a78bfa;
     --border: #2d3a4d;
     --speaker-bg: #1c2a3f;
     --speaker-border: #38bdf8;
@@ -264,6 +265,26 @@
     margin-bottom: 10px;
   }
 
+  /* Non-technical tool cards */
+  .tool-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+  }
+  .tool-card h4 { margin-top: 0; color: var(--purple); }
+  .tool-card .tool-type {
+    display: inline-block;
+    background: rgba(167,139,250,0.12);
+    color: var(--purple);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
   /* Cheat sheet cards */
   .cheat-card {
     background: var(--bg-card);
@@ -418,7 +439,7 @@
             <td>AI safety-focused company</td>
             <td>Claude Opus 4, Claude Sonnet 4</td>
             <td><strong>claude.ai</strong> (web, mobile), API</td>
-            <td>Excellent at long documents, analysis, and careful reasoning</td>
+            <td>Excellent at long documents, analysis, careful reasoning, and now image generation</td>
           </tr>
           <tr>
             <td><strong>Meta</strong></td>
@@ -446,7 +467,7 @@
     </div>
 
     <div class="speaker-note">
-      Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with ChatGPT or Claude.
+      Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with Claude. It's what I use for everything you're about to see.
     </div>
 
     <div class="optional">
@@ -538,19 +559,66 @@
     </div>
   </section>
 
-  <!-- SLIDE 5 -->
+  <!-- SLIDE 5 — AI Beyond Chat -->
   <section id="slide-5">
     <div class="slide-header">
       <span class="slide-num">5</span>
+      <h2>AI Beyond Chat: Tools for Non-Technical Work</h2>
+    </div>
+    <div class="speaker-note">
+      Now, everything I've shown so far might feel very 'tech world.' But AI isn't just for developers — there's a whole ecosystem of tools that make AI useful for everyday business work, even if you never write a line of code.
+    </div>
+
+    <div class="tool-card">
+      <h4>🤝 Claude Co-work</h4>
+      <span class="tool-type">Anthropic — Collaborative Workspace</span>
+      <p>Claude's collaborative workspace feature. Claude works alongside you in a persistent space where it can create documents, spreadsheets, code, and artifacts. It's like having a colleague who can draft, edit, and iterate with you in real-time.</p>
+      <p><strong>Why it matters:</strong> Perfect for business users who don't code. You work <em>with</em> Claude, not just chat at it. Think of it as a virtual co-worker who never sleeps.</p>
+    </div>
+
+    <div class="tool-card">
+      <h4>🔧 OpenClaw</h4>
+      <span class="tool-type">Open Source — Personal AI Assistant</span>
+      <p>An open-source personal AI assistant framework that connects AI to your actual tools — email, calendar, messaging, files. Instead of copy-pasting between AI and your apps, the AI operates directly.</p>
+      <p><strong>Example:</strong> "Check my email, summarise what's urgent, and draft replies." It runs locally, you control your data. No corporate middleman.</p>
+    </div>
+
+    <div class="tool-card">
+      <h4>📝 Notion AI</h4>
+      <span class="tool-type">Built into Notion — Project Management & Docs</span>
+      <p>AI built directly into Notion — your project management, notes, and docs. Summarise pages, generate content, answer questions about your workspace. If you already use Notion, the AI is just... there.</p>
+    </div>
+
+    <div class="tool-card">
+      <h4>🎨 Gamma.app</h4>
+      <span class="tool-type">AI-Powered Presentations</span>
+      <p>AI-powered presentation and slide generation. Describe what you want, get designed slides. We'll actually use this in the workshop — you'll see it turn text into a pitch deck in seconds.</p>
+    </div>
+
+    <div class="tool-card">
+      <h4>🔍 Perplexity</h4>
+      <span class="tool-type">AI-Powered Research — Free to Try</span>
+      <p>AI-powered research with citations. Every answer links back to real sources you can verify. Like Google, but it gives you answers with footnotes — not ten blue links. Great for market research, and free to start using.</p>
+    </div>
+
+    <div class="speaker-note">
+      The takeaway here: AI isn't just a chatbot you ask questions to. These tools embed AI into the work you're already doing — your documents, your email, your presentations, your research. The gap between 'talking to an AI' and 'AI doing the work' is closing fast. And you don't need to be technical to use any of these.
+    </div>
+  </section>
+
+  <!-- SLIDE 6 -->
+  <section id="slide-6">
+    <div class="slide-header">
+      <span class="slide-num">6</span>
       <h2>Five Things You're About to See Me Do Live</h2>
     </div>
     <div class="speaker-note">
-      Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, an AI tool, and a business problem.
+      Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, Claude, and a business problem.
     </div>
 
     <div class="use-case">
       <h4>1. 📊 Turn Messy Financials into an Executive Summary</h4>
-      <span class="tool-badge">ChatGPT — Advanced Data Analysis</span>
+      <span class="tool-badge">Claude — File Upload & Analysis</span>
       <ul>
         <li><strong>The task:</strong> Take a raw, unformatted Excel spreadsheet of company financials and ask AI to clean it up, calculate key financial ratios (profit margin, burn rate, runway), and produce a board-ready executive summary</li>
         <li><strong>Why it's impressive:</strong> This normally takes a financial analyst 2–3 hours. We'll do it in under 5 minutes.</li>
@@ -570,9 +638,9 @@
 
     <div class="use-case">
       <h4>3. 🎨 Create a Brand Identity from Scratch</h4>
-      <span class="tool-badge">ChatGPT (DALL·E) + Claude</span>
+      <span class="tool-badge">Claude — Image Generation + Text</span>
       <ul>
-        <li><strong>The task:</strong> Invent a fictional business on the spot, then generate a logo, colour palette, brand guidelines, and tone of voice document</li>
+        <li><strong>The task:</strong> Invent a fictional business on the spot, then generate a logo, colour palette, brand guidelines, and tone of voice document — all in one tool</li>
         <li><strong>Why it's impressive:</strong> A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes.</li>
         <li><strong>What you'll see:</strong> Business idea → logo options → full brand guidelines document</li>
       </ul>
@@ -580,7 +648,7 @@
 
     <div class="use-case">
       <h4>4. 🔍 Deep-Dive Market Research with Sources</h4>
-      <span class="tool-badge">Perplexity + Claude</span>
+      <span class="tool-badge">Claude — Web Search (Perplexity as free alternative)</span>
       <ul>
         <li><strong>The task:</strong> Pick a market and ask AI to produce a structured competitive analysis — market size, key players, trends, threats, opportunities — with actual sources you can verify</li>
         <li><strong>Why it's impressive:</strong> This is a week-long consulting engagement compressed into minutes. The sources are real, clickable, and verifiable.</li>
@@ -590,7 +658,7 @@
 
     <div class="use-case">
       <h4>5. 🚀 Build an Investor Pitch Deck from a Napkin Idea</h4>
-      <span class="tool-badge">ChatGPT or Claude → Slides</span>
+      <span class="tool-badge">Claude → Gamma.app for Slides</span>
       <ul>
         <li><strong>The task:</strong> Starting from a one-line business idea, produce a complete investor pitch deck — problem, solution, market size, business model, team slide, financial projections, the ask</li>
         <li><strong>Why it's impressive:</strong> Founders spend weeks on pitch decks. We'll have a solid first draft in minutes.</li>
@@ -599,7 +667,7 @@
     </div>
 
     <div class="speaker-note">
-      Five real tasks. No magic, no pre-prepared answers. Just AI tools that are available to every single person in this room — most of them free. Ready to see it happen? Let's go.
+      Five real tasks. No magic, no pre-prepared answers. All done with one tool — Claude — that's available to every single person in this room. Ready to see it happen? Let's go.
     </div>
 
     <div class="talk-links" style="margin-top:32px;">
@@ -614,18 +682,18 @@
     <div class="cheat-card">
       <h4>💬 "Which one should I use?"</h4>
       <ul>
-        <li>For general tasks: <strong>ChatGPT</strong> (easiest to start, best all-rounder)</li>
-        <li>For long documents/analysis: <strong>Claude</strong> (handles large files, careful reasoning)</li>
-        <li>For research with sources: <strong>Perplexity</strong> (gives citations)</li>
+        <li>For everything in today's demos: <strong>Claude</strong> (claude.ai — what I use daily)</li>
+        <li>For research with sources: <strong>Perplexity</strong> (free to try, gives citations)</li>
         <li>For anything in Google Workspace: <strong>Gemini</strong> (already built in)</li>
+        <li>ChatGPT is also excellent — similar capabilities, different interface</li>
       </ul>
     </div>
 
     <div class="cheat-card">
       <h4>💰 "Is it free?"</h4>
       <ul>
-        <li>ChatGPT: Free tier available, paid ~£20/month for full power</li>
-        <li>Claude: Free tier available, paid ~£18/month</li>
+        <li>Claude: Free tier available, paid ~£18/month for full power (Pro) — this is what I use</li>
+        <li>ChatGPT: Free tier available, paid ~£20/month</li>
         <li>Gemini: Free in Google products, paid tier for advanced features</li>
         <li>Perplexity: Free with limits, Pro ~£17/month</li>
       </ul>

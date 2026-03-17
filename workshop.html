@@ -114,6 +114,17 @@
 
   .wrap-section { background: linear-gradient(135deg, rgba(56,189,248,0.06), rgba(74,222,128,0.06)); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin: 32px 0; text-align: center; }
 
+  .one-tool-note {
+    background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(167,139,250,0.08));
+    border: 1px solid var(--accent-dim);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
   @media (max-width: 640px) {
     body { font-size: 16px; }
     .container { padding: 0 16px; }
@@ -168,16 +179,17 @@
     <h2>🔧 Pre-Talk Setup Checklist</h2>
     <p>Before going on stage, have everything ready:</p>
     <ul class="checklist">
-      <li><strong>ChatGPT (GPT-5)</strong> — logged in, fresh chat ready, file upload tested</li>
-      <li><strong>Claude</strong> — logged in, fresh chat ready</li>
-      <li><strong>Perplexity Pro</strong> — logged in</li>
+      <li><strong>Claude</strong> — logged in at claude.ai, fresh chat ready, file upload tested</li>
       <li><strong>Gamma.app</strong> — account created, logged in</li>
       <li><strong>Excel file</strong> prepared (Use Case 1 — see Appendix A)</li>
       <li><strong>Engagement brief</strong> in a .txt or .docx (Use Case 2 — see Appendix B)</li>
       <li><strong>This document</strong> open on a second screen or phone for reference</li>
-      <li><strong>Browser tabs</strong> pre-opened: ChatGPT, Claude, Perplexity, Gamma</li>
+      <li><strong>Browser tabs</strong> pre-opened: Claude (multiple fresh chats), Gamma</li>
       <li><strong>Timer</strong> visible — keep yourself honest on pacing</li>
     </ul>
+    <div class="one-tool-note">
+      💡 All five use cases run on Claude. One tool, one login, one subscription. That's the point.
+    </div>
   </section>
 
   <!-- USE CASE 1 -->
@@ -186,7 +198,7 @@
       <h2>Use Case 1: Financial Analysis</h2>
       <span class="time-badge">⏱ 7 minutes</span>
     </div>
-    <span class="tool-badge">ChatGPT (GPT-5) with file upload</span>
+    <span class="tool-badge">Claude (claude.ai) with file upload</span>
 
     <h3>Scenario</h3>
     <p>A messy spreadsheet of fictional company "GreenPulse Ltd" — 12 months of P&L data with inconsistent formatting, missing values, and mixed currencies. AI cleans it, calculates key ratios, spots trends, and writes an executive summary.</p>
@@ -200,7 +212,7 @@
 
     <div class="step">
       <p><span class="step-num">2</span><strong>Upload the file and paste the primary prompt</strong></p>
-      <p>Open ChatGPT → Click attachment → Upload <code>greenpulse-financials-2025.xlsx</code></p>
+      <p>Open Claude → Click the attachment icon → Upload <code>greenpulse-financials-2025.xlsx</code></p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
 <pre>I've uploaded a 12-month P&L spreadsheet for GreenPulse Ltd, an early-stage clean energy startup. The data is messy — there are inconsistent date formats, some values are in GBP and others in EUR (use an exchange rate of 1 EUR = 0.86 GBP to standardise everything to GBP), a few cells have missing values, and the formatting is all over the place.
@@ -241,10 +253,10 @@ Format everything clearly with headers and tables. Be specific with numbers — 
     </div>
 
     <div class="step">
-      <p><span class="step-num">5</span><strong>Follow-up prompt #1 — Charts</strong></p>
+      <p><span class="step-num">5</span><strong>Follow-up prompt #1 — Trend Analysis</strong></p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<pre>Now create a line chart showing monthly revenue vs total expenses over the 12-month period. Add a secondary line for EBITDA. Use clear colours and label everything. Title it "GreenPulse Ltd — 2025 Financial Performance".</pre>
+<pre>Now create a visual representation of the monthly revenue vs total expenses over the 12-month period, with EBITDA as a third data series. Present this as a clean markdown table with a sparkline description, and describe what the chart would look like — the trend lines, crossover points, and key inflection moments. Title it "GreenPulse Ltd — 2025 Financial Performance".</pre>
       </div>
       <div class="audience-note">
         And now we're iterating. This is the real power — you don't get it perfect first time, you refine. Just like working with a human analyst, except this one doesn't need a coffee break.
@@ -266,7 +278,7 @@ Format everything clearly with headers and tables. Be specific with numbers — 
 <pre>Write a one-page board summary in formal tone, structured as: (1) Performance Highlights, (2) Key Concerns, (3) Recommended Actions. Use bullet points, include specific numbers, and keep it under 400 words. This should be ready to email to a non-executive director.</pre>
       </div>
       <div class="audience-note">
-        Three prompts, three minutes, and we've gone from a messy spreadsheet to a board-ready report with charts and risk analysis. That's the workflow — upload, analyse, iterate, deliver.
+        Three prompts, three minutes, and we've gone from a messy spreadsheet to a board-ready report with analysis and risk assessment. That's the workflow — upload, analyse, iterate, deliver.
       </div>
     </div>
 
@@ -275,7 +287,7 @@ Format everything clearly with headers and tables. Be specific with numbers — 
       <ul>
         <li>Clean formatted table of all 12 months with standardised GBP values</li>
         <li>Calculated metrics: gross margin, EBITDA, burn rate, runway</li>
-        <li>Line chart (revenue vs expenses vs EBITDA)</li>
+        <li>Financial trend analysis with visual description</li>
         <li>Risk matrix with likelihood/impact ratings</li>
         <li>Polished board summary ready to copy into an email</li>
       </ul>
@@ -397,15 +409,15 @@ Use formal legal English. Include standard boilerplate where appropriate. Make i
       <h2>Use Case 3: Brand Identity</h2>
       <span class="time-badge">⏱ 6 minutes</span>
     </div>
-    <span class="tool-badge">ChatGPT with DALL-E 3/4</span>
+    <span class="tool-badge">Claude (image generation + text)</span>
 
     <h3>Scenario</h3>
-    <p>Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. Show how AI generates visual assets from text descriptions.</p>
+    <p>Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. Claude can now generate images directly, so we'll do the visual assets and brand guidelines all in one place.</p>
 
     <div class="step">
       <p><span class="step-num">1</span><strong>Set the scene</strong> (30 sec)</p>
       <div class="audience-note">
-        Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup.
+        Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. And I'm using the same tool — Claude — which can now generate images as well as text.
       </div>
     </div>
 
@@ -430,7 +442,7 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
     <div class="step">
       <p><span class="step-num">3</span><strong>While image generates</strong> (~15–30 sec)</p>
       <div class="audience-note">
-        With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output.
+        With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. And notice — same tool we used for the contract. One subscription, text and images.
       </div>
     </div>
 
@@ -465,7 +477,7 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
 Present this as a clean brand style guide section with colour swatches.</pre>
       </div>
       <div class="audience-note">
-        Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. The AI remembers context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible.
+        Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. Claude remembers the full context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible.
       </div>
     </div>
 
@@ -491,7 +503,7 @@ Present this as a clean brand style guide section with colour swatches.</pre>
     </div>
 
     <div class="audience-note">
-      Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch.
+      Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. All in one tool. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch.
     </div>
   </section>
 
@@ -501,7 +513,7 @@ Present this as a clean brand style guide section with colour swatches.</pre>
       <h2>Use Case 4: Market Research Report</h2>
       <span class="time-badge">⏱ 8 minutes</span>
     </div>
-    <span class="tool-badge">Perplexity Pro (real-time web search with citations)</span>
+    <span class="tool-badge">Claude (web search enabled) — Perplexity is a great free alternative</span>
 
     <h3>Scenario</h3>
     <p>Deep research on the UK sustainable packaging market — structured report with market sizing, competitor analysis, key trends, and strategic recommendations. All from a single prompt, then refined.</p>
@@ -509,7 +521,7 @@ Present this as a clean brand style guide section with colour swatches.</pre>
     <div class="step">
       <p><span class="step-num">1</span><strong>Set the scene</strong> (30 sec)</p>
       <div class="audience-note">
-        Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. The key difference with this tool, Perplexity, is that it cites its sources. Every claim links back to a real article, report, or data source. That's what makes it usable for real business decisions.
+        Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. Claude can search the web and cite its sources — every claim links back to a real article, report, or data source. That's what makes it usable for real business decisions. If you want to try this at home for free, Perplexity is another excellent tool that's specifically built for sourced research.
       </div>
     </div>
 
@@ -517,7 +529,7 @@ Present this as a clean brand style guide section with colour swatches.</pre>
       <p><span class="step-num">2</span><strong>Paste the primary prompt</strong></p>
       <div class="code-block">
         <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
-<pre>Conduct a comprehensive market research analysis of the UK sustainable packaging industry as of 2026. I need a structured report covering:
+<pre>Search the web and conduct a comprehensive market research analysis of the UK sustainable packaging industry as of 2026. I need a structured report covering:
 
 1. **Market Overview**: Current market size (£), growth rate (CAGR), and projected size by 2030. Break down by segment: biodegradable plastics, paper/cardboard alternatives, reusable packaging systems, and edible/dissolvable packaging.
 
@@ -536,7 +548,7 @@ Cite all statistics and claims with sources. Use the most recent data available.
     <div class="step">
       <p><span class="step-num">3</span><strong>While AI researches</strong> (~60–90 sec)</p>
       <div class="audience-note">
-        This is going to take a bit longer than the others because it's actually searching the internet in real time — pulling from news articles, industry reports, company websites. Watch the sources it pulls in. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely.
+        This is going to take a bit longer than the others because Claude is actually searching the internet in real time — pulling from news articles, industry reports, company websites. Watch the sources it pulls in. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely.
       </div>
     </div>
 
@@ -613,7 +625,7 @@ Show your reasoning and assumptions for each figure. Cite sources for the base m
     <span class="tool-badge">Claude → Gamma.app</span>
 
     <h3>Scenario</h3>
-    <p>Take a one-paragraph business idea and produce a complete 12-slide pitch deck with content, speaker notes, and actual designed slides — using AI for content and Gamma.app for design.</p>
+    <p>Take a one-paragraph business idea and produce a complete 12-slide pitch deck with content, speaker notes, and actual designed slides — using Claude for content and Gamma.app for design.</p>
 
     <div class="step">
       <p><span class="step-num">1</span><strong>Set the scene</strong> (30 sec)</p>
@@ -734,7 +746,7 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
     <div class="wrap-section">
       <h2>Wrap-Up</h2>
       <div class="audience-note">
-        So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. <strong>AI is the accelerator. You're still the driver.</strong>
+        So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude — plus Gamma for the slides at the end. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. <strong>AI is the accelerator. You're still the driver.</strong>
       </div>
     </div>
   </section>
@@ -748,10 +760,10 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
           <tr><th>#</th><th>Topic</th><th>Tool</th><th>Time</th></tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>Financial Analysis</td><td>ChatGPT + Excel</td><td>7 min</td></tr>
+          <tr><td>1</td><td>Financial Analysis</td><td>Claude + Excel upload</td><td>7 min</td></tr>
           <tr><td>2</td><td>Contract Drafting</td><td>Claude</td><td>7 min</td></tr>
-          <tr><td>3</td><td>Brand Identity</td><td>ChatGPT + DALL-E</td><td>6 min</td></tr>
-          <tr><td>4</td><td>Market Research</td><td>Perplexity Pro</td><td>8 min</td></tr>
+          <tr><td>3</td><td>Brand Identity</td><td>Claude (image generation)</td><td>6 min</td></tr>
+          <tr><td>4</td><td>Market Research</td><td>Claude (web search)</td><td>8 min</td></tr>
           <tr><td>5</td><td>Pitch Deck</td><td>Claude + Gamma</td><td>7 min</td></tr>
           <tr style="font-weight:700;"><td></td><td><strong>Total</strong></td><td></td><td><strong>~35 min</strong></td></tr>
         </tbody>
@@ -768,9 +780,9 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
         <table>
           <thead><tr><th>Problem</th><th>Fix</th></tr></thead>
           <tbody>
-            <tr><td>ChatGPT is slow/down</td><td>Switch to Claude (have it open in another tab)</td></tr>
-            <tr><td>DALL-E fails to generate</td><td>Have 2-3 pre-generated images saved as backup</td></tr>
-            <tr><td>Perplexity is slow</td><td>Use ChatGPT with browsing, or have key stats noted</td></tr>
+            <tr><td>Claude is slow/down</td><td>Have a backup ChatGPT or Gemini tab open (create free accounts beforehand)</td></tr>
+            <tr><td>Image generation fails</td><td>Have 2-3 pre-generated images saved as backup. Or switch to text-only brand guidelines</td></tr>
+            <tr><td>Web search doesn't return good sources</td><td>Have key stats noted down. Or show Perplexity as the alternative</td></tr>
             <tr><td>Gamma.app doesn't load</td><td>Show the Claude markdown output and say "imagine this as slides"</td></tr>
             <tr><td>Any tool is completely down</td><td>Skip to the next use case, come back if time allows</td></tr>
             <tr><td>Internet goes down</td><td>Have all prompts saved locally. Show screenshots of expected outputs.</td></tr>

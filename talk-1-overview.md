@@ -15,8 +15,9 @@
 | 2 | "Who's Who in AI" — landscape table | 2 min |
 | 3 | "But what about code?" — dev tools | 1.5 min |
 | 4 | Key concept: Models vs Tools | 30s |
-| 5 | "5 Things You'll See Me Do Live" — use cases | 2 min |
-| 6 | Transition to Talk 2 / Q&A buffer | 1 min |
+| 5 | "AI Beyond Chat" — non-technical tools | 2 min |
+| 6 | "5 Things You'll See Me Do Live" — use cases | 2 min |
+| 7 | Transition to Talk 2 / Q&A buffer | 1 min |
 
 ---
 
@@ -40,12 +41,12 @@
 |---------|-------------|--------------------------|-------------------|-----------|
 | **OpenAI** | The company that started the current AI wave | GPT-4o, GPT-5, o3 | **ChatGPT** (web, mobile app, desktop) | The household name. Best all-rounder. Also does image generation (DALL·E) |
 | **Google DeepMind** | Google's AI division | Gemini 2.5, Gemini 3 | **Gemini app**, Google AI Studio, baked into Gmail/Docs/Sheets | Deeply integrated into Google products you already use |
-| **Anthropic** | AI safety-focused company | Claude Opus 4, Claude Sonnet 4 | **claude.ai** (web, mobile), API | Excellent at long documents, analysis, and careful reasoning |
+| **Anthropic** | AI safety-focused company | Claude Opus 4, Claude Sonnet 4 | **claude.ai** (web, mobile), API | Excellent at long documents, analysis, careful reasoning, and now image generation |
 | **Meta** | Facebook/Instagram parent | Llama 4 (open-source) | Available through many apps and platforms | Free and open — anyone can build with it |
 | **xAI** | Elon Musk's AI company | Grok 3 | Built into **X** (Twitter), standalone app | Real-time information, integrated into social media |
 | **Perplexity** | AI-powered search engine | Uses multiple models | **perplexity.ai** (web, mobile) | Search with sources — like Google but it gives you answers, not links |
 
-> 🎤 **Speaker note:** "Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with ChatGPT or Claude."
+> 🎤 **Speaker note:** "Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with Claude. It's what I use for everything you're about to see."
 
 **Optional mention:** Mistral (French company, strong in Europe, good for multilingual work)
 
@@ -82,13 +83,31 @@
 
 ---
 
-## SLIDE 5 — Five Things You're About to See Me Do Live
+## SLIDE 5 — AI Beyond Chat: Tools for Non-Technical Work
 
-> 🎤 **Speaker note:** "Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, an AI tool, and a business problem."
+> 🎤 **Speaker note:** "Now, everything I've shown so far might feel very 'tech world.' But AI isn't just for developers — there's a whole ecosystem of tools that make AI useful for everyday business work, even if you never write a line of code."
+
+### AI tools that connect to your actual workflow:
+
+| Tool | What It Does | Why It Matters |
+|------|-------------|----------------|
+| **Claude Co-work** | Anthropic's collaborative workspace — Claude works alongside you in a persistent space where it can create documents, spreadsheets, code, and artifacts. Like having a colleague who can draft, edit, and iterate with you in real-time. | Perfect for business users who don't code. You work *with* Claude, not just chat at it. |
+| **OpenClaw** | An open-source personal AI assistant framework. Connects AI to your actual tools — email, calendar, messaging, files. Instead of copy-pasting between AI and your apps, the AI operates directly. | Example: "Check my email, summarise what's urgent, and draft replies." Runs locally — you control your data. |
+| **Notion AI** | AI built directly into Notion — your project management, notes, and docs. Summarise pages, generate content, answer questions about your workspace. | If you already use Notion, the AI is just... there. No switching tools. |
+| **Gamma.app** | AI-powered presentation and slide generation. Describe what you want, get designed slides. | We'll actually use this in the workshop — you'll see it turn text into a pitch deck in seconds. |
+| **Perplexity** | AI-powered research with citations. Every answer links back to real sources you can verify. Free to try. | Like Google, but it gives you answers with footnotes — not ten blue links. Great for market research. |
+
+> 🎤 **Speaker note:** "The takeaway here: AI isn't just a chatbot you ask questions to. These tools embed AI into the work you're already doing — your documents, your email, your presentations, your research. The gap between 'talking to an AI' and 'AI doing the work' is closing fast. And you don't need to be technical to use any of these."
+
+---
+
+## SLIDE 6 — Five Things You're About to See Me Do Live
+
+> 🎤 **Speaker note:** "Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, Claude, and a business problem."
 
 ### 1. 📊 Turn Messy Financials into an Executive Summary
 - **The task:** I'll take a raw, unformatted Excel spreadsheet of company financials — the kind your accountant emails you — and ask AI to clean it up, calculate key financial ratios (profit margin, burn rate, runway), and produce a board-ready executive summary
-- **Tool:** ChatGPT (with Advanced Data Analysis)
+- **Tool:** Claude (claude.ai — with file upload)
 - **Why it's impressive:** This normally takes a financial analyst 2–3 hours. We'll do it in under 5 minutes.
 - **What you'll see:** Messy spreadsheet in → clean summary with charts out
 
@@ -100,39 +119,39 @@
 
 ### 3. 🎨 Create a Brand Identity from Scratch
 - **The task:** We'll invent a fictional business on the spot (audience picks the concept), then generate a logo, colour palette, brand guidelines, and tone of voice document — a complete brand identity package
-- **Tool:** ChatGPT (DALL·E for images) + Claude (for brand guidelines doc)
+- **Tool:** Claude (claude.ai — which now generates images directly)
 - **Why it's impressive:** A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes. (It won't replace a great designer — but it gives you something real to react to.)
 - **What you'll see:** Business idea → logo options → full brand guidelines document
 
 ### 4. 🔍 Deep-Dive Market Research with Sources
 - **The task:** I'll pick a market (or the audience picks one), and ask AI to produce a structured competitive analysis — market size, key players, trends, threats, opportunities — with actual sources you can verify
-- **Tool:** Perplexity (for sourced research) + Claude (for structuring the report)
+- **Tool:** Claude (claude.ai — with web search enabled). Perplexity is a great free alternative for sourced research.
 - **Why it's impressive:** This is a week-long consulting engagement compressed into minutes. The sources are real, clickable, and verifiable.
 - **What you'll see:** Market question → structured research report with citations
 
 ### 5. 🚀 Build an Investor Pitch Deck from a Napkin Idea
 - **The task:** Starting from a one-line business idea, I'll produce a complete investor pitch deck — problem, solution, market size, business model, team slide, financial projections, the ask — in presentation format
-- **Tool:** ChatGPT or Claude → exported to slides
+- **Tool:** Claude (claude.ai) → exported to slides via Gamma.app
 - **Why it's impressive:** Founders spend weeks on pitch decks. We'll have a solid first draft in minutes. It won't win you funding alone — but it gives you the structure and story to build on.
 - **What you'll see:** One-line idea → complete pitch deck with 10–12 slides
 
 ---
 
-> 🎤 **Speaker note (transition to Talk 2):** "Five real tasks. No magic, no pre-prepared answers. Just AI tools that are available to every single person in this room — most of them free. Ready to see it happen? Let's go."
+> 🎤 **Speaker note (transition to Talk 2):** "Five real tasks. No magic, no pre-prepared answers. All done with one tool — Claude — that's available to every single person in this room. Ready to see it happen? Let's go."
 
 ---
 
 ## Presenter Cheat Sheet
 
 **If someone asks "which one should I use?":**
-- For general tasks: **ChatGPT** (easiest to start, best all-rounder)
-- For long documents/analysis: **Claude** (handles large files, careful reasoning)
-- For research with sources: **Perplexity** (gives citations)
+- For everything in today's demos: **Claude** (claude.ai — what I use daily)
+- For research with sources: **Perplexity** (free to try, gives citations)
 - For anything in Google Workspace: **Gemini** (already built in)
+- ChatGPT is also excellent — similar capabilities, different interface
 
 **If someone asks "is it free?":**
-- ChatGPT: Free tier available, paid plan ~£20/month for full power
-- Claude: Free tier available, paid plan ~£18/month
+- Claude: Free tier available, paid plan ~£18/month for full power (Pro) — this is what I use
+- ChatGPT: Free tier available, paid ~£20/month
 - Gemini: Free in Google products, paid tier for advanced features
 - Perplexity: Free with limits, Pro ~£17/month
 

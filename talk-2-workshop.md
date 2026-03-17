@@ -2,7 +2,7 @@
 
 > **Format:** Hands-on live demo. Ali walks through each use case in real time, pasting prompts and showing results on screen.
 > **Total time:** ~35 minutes (5–8 min per use case, including transitions)
-> **Prep required:** Files created, accounts logged in, tabs open BEFORE the talk starts.
+> **Prep required:** Files created, Claude logged in, tabs open BEFORE the talk starts.
 
 ---
 
@@ -10,15 +10,15 @@
 
 Before going on stage, Ali needs:
 
-- [ ] **ChatGPT (GPT-5)** — logged in, fresh chat ready, file upload tested
-- [ ] **Claude** — logged in, fresh chat ready
-- [ ] **Perplexity Pro** — logged in
+- [ ] **Claude** — logged in at claude.ai, fresh chat ready, file upload tested
 - [ ] **Gamma.app** — account created, logged in
 - [ ] **Excel file** prepared (Use Case 1 — see Appendix A)
 - [ ] **Engagement brief** in a .txt or .docx (Use Case 2 — see Appendix B)
 - [ ] **This document** open on a second screen or phone for reference
-- [ ] **Browser tabs** pre-opened: ChatGPT, Claude, Perplexity, Gamma
+- [ ] **Browser tabs** pre-opened: Claude (multiple fresh chats), Gamma
 - [ ] **Timer** visible (phone or laptop widget) — keep yourself honest on pacing
+
+**Note:** All five use cases run on Claude. One tool, one login, one subscription. That's the point — you don't need five different AI accounts.
 
 ---
 
@@ -30,12 +30,12 @@ Before going on stage, Ali needs:
 A messy spreadsheet of fictional company "GreenPulse Ltd" — 12 months of P&L data with inconsistent formatting, missing values, and mixed currencies. AI cleans it, calculates key ratios, spots trends, and writes an executive summary.
 
 ### Tool
-**ChatGPT (GPT-5) with file upload** — best-in-class for spreadsheet analysis with visual chart generation. Claude is the backup if ChatGPT is slow.
+**Claude** (claude.ai with file upload) — excellent at spreadsheet analysis, structured output, and producing clean formatted tables. Claude handles file uploads natively and can process Excel/CSV data.
 
 ### Prerequisites
 - [ ] Excel file `greenpulse-financials-2025.xlsx` created from data in **Appendix A**
 - [ ] File saved to Desktop for quick upload
-- [ ] ChatGPT open with a fresh conversation
+- [ ] Claude open with a fresh conversation
 
 ### Steps
 
@@ -45,7 +45,7 @@ A messy spreadsheet of fictional company "GreenPulse Ltd" — 12 months of P&L d
 
 **2. Upload the file and paste the primary prompt**
 
-**Open ChatGPT → Click attachment → Upload `greenpulse-financials-2025.xlsx`**
+**Open Claude → Click the attachment icon → Upload `greenpulse-financials-2025.xlsx`**
 
 Then paste:
 
@@ -83,7 +83,7 @@ Format everything clearly with headers and tables. Be specific with numbers — 
 **5. Paste follow-up prompt #1:**
 
 ```
-Now create a line chart showing monthly revenue vs total expenses over the 12-month period. Add a secondary line for EBITDA. Use clear colours and label everything. Title it "GreenPulse Ltd — 2025 Financial Performance".
+Now create a visual representation of the monthly revenue vs total expenses over the 12-month period, with EBITDA as a third data series. Present this as a clean markdown table with a sparkline description, and describe what the chart would look like — the trend lines, crossover points, and key inflection moments. Title it "GreenPulse Ltd — 2025 Financial Performance".
 ```
 
 > **AUDIENCE NOTE:** "And now we're iterating. This is the real power — you don't get it perfect first time, you refine. Just like working with a human analyst, except this one doesn't need a coffee break."
@@ -100,12 +100,12 @@ Based on this financial data, what are the three biggest risks facing GreenPulse
 Write a one-page board summary in formal tone, structured as: (1) Performance Highlights, (2) Key Concerns, (3) Recommended Actions. Use bullet points, include specific numbers, and keep it under 400 words. This should be ready to email to a non-executive director.
 ```
 
-> **AUDIENCE NOTE:** "Three prompts, three minutes, and we've gone from a messy spreadsheet to a board-ready report with charts and risk analysis. That's the workflow — upload, analyse, iterate, deliver."
+> **AUDIENCE NOTE:** "Three prompts, three minutes, and we've gone from a messy spreadsheet to a board-ready report with analysis and risk assessment. That's the workflow — upload, analyse, iterate, deliver."
 
 ### Expected Output
 - Clean formatted table of all 12 months with standardised GBP values
 - Calculated metrics: gross margin, EBITDA, burn rate, runway
-- Line chart (revenue vs expenses vs EBITDA)
+- Financial trend analysis with visual description
 - Risk matrix with likelihood/impact ratings
 - Polished board summary ready to copy into an email
 
@@ -119,7 +119,7 @@ Write a one-page board summary in formal tone, structured as: (1) Performance Hi
 Draft a professional services agreement for a consulting engagement from a simple brief. Show how AI can produce a legally structured document, then refine specific clauses through iteration.
 
 ### Tool
-**Claude** — stronger at long-form structured writing and legal language. Use the latest Claude model available.
+**Claude** — strongest at long-form structured writing and legal language. Use the latest Claude model available.
 
 ### Prerequisites
 - [ ] Engagement brief prepared (see **Appendix B**) — either typed out or in a .txt file ready to paste
@@ -212,18 +212,17 @@ Now simplify the entire contract's language. Rewrite it so that a non-lawyer bus
 Create a logo and basic brand identity for a fictional startup called "Aether" — an AI-powered air quality monitoring platform. Show how AI generates visual assets from text descriptions.
 
 ### Tool
-**ChatGPT with DALL-E 3/4** — integrated, fast, and good at iterating. Alternatively, **Gemini** with image generation if DALL-E is slow.
+**Claude** (claude.ai) — Claude can now generate images directly (as of early 2026). No need for a separate image generation tool. We'll use Claude for both the visual assets and the brand guidelines document — everything in one place.
 
 ### Prerequisites
 - [ ] Startup description ready (see **Appendix C**)
-- [ ] ChatGPT open with a fresh conversation
-- [ ] Backup: Gemini open in another tab
+- [ ] Claude open with a fresh conversation
 
 ### Steps
 
 **1. Set the scene (30 sec)**
 
-> **AUDIENCE NOTE:** "Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup."
+> **AUDIENCE NOTE:** "Now let's do something visual. Every new business needs a brand identity — logo, colours, the works. Designers charge thousands for this. Let's see if we can get a solid starting point in five minutes. We're creating a brand for 'Aether' — an AI-powered air quality monitoring startup. And I'm using the same tool — Claude — which can now generate images as well as text."
 
 **2. Paste the primary prompt:**
 
@@ -243,7 +242,7 @@ Style: minimal, geometric, professional. Not cartoonish, not overly complex. Thi
 
 **3. While image generates (~15–30 sec), talk to audience:**
 
-> **AUDIENCE NOTE:** "With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output."
+> **AUDIENCE NOTE:** "With image generation, the description is everything. I've given it a mood — 'calm technology.' I've named reference brands — Stripe, Linear, Notion. I've specified what I don't want — not cartoonish, not complex. The more you constrain the creative space, the better the output. And notice — same tool we used for the contract. One subscription, text and images."
 
 **4. Show the generated logo. React to it honestly.**
 
@@ -270,7 +269,7 @@ Now, based on this logo design, generate a complete brand colour palette and typ
 Present this as a clean brand style guide section with colour swatches.
 ```
 
-> **AUDIENCE NOTE:** "Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. The AI remembers context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible."
+> **AUDIENCE NOTE:** "Notice we've gone from 'generate a logo' to building out a whole brand system. Each prompt builds on the last. Claude remembers the full context — it knows we're working on Aether, it knows the teal palette, it knows the minimal direction. That conversational memory is what makes this workflow possible."
 
 **7. Paste follow-up prompt #3:**
 
@@ -289,7 +288,7 @@ Create a professional business card mockup for Aether using the logo and brand c
 
 ### Talking Point for Transition
 
-> **AUDIENCE NOTE:** "Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch."
+> **AUDIENCE NOTE:** "Four prompts, four minutes — we've gone from a text description to a logo, colour palette, and business card. All in one tool. Is it finished brand identity work? No. But it's a brief you can hand to a designer that saves hours of back-and-forth on direction. And for an early-stage startup that can't afford a design agency yet? This gets you to 'good enough' to launch."
 
 ---
 
@@ -301,22 +300,22 @@ Create a professional business card mockup for Aether using the logo and brand c
 Deep research on the UK sustainable packaging market — structured report with market sizing, competitor analysis, key trends, and strategic recommendations. All from a single prompt, then refined.
 
 ### Tool
-**Perplexity Pro** — uses real-time web search with cited sources. This is critical for research credibility. If Perplexity is unavailable, use ChatGPT with browsing enabled.
+**Claude** (claude.ai with web search enabled) — Claude can search the web and provide sourced research. For the audience: **Perplexity** (perplexity.ai) is a great free alternative that's purpose-built for research with citations.
 
 ### Prerequisites
-- [ ] Perplexity Pro logged in, fresh thread
+- [ ] Claude logged in, fresh conversation, web search enabled
 - [ ] No files needed — researching from scratch
 
 ### Steps
 
 **1. Set the scene (30 sec)**
 
-> **AUDIENCE NOTE:** "Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. The key difference with this tool, Perplexity, is that it cites its sources. Every claim links back to a real article, report, or data source. That's what makes it usable for real business decisions."
+> **AUDIENCE NOTE:** "Now for something that used to take a research team weeks — market research. We're going to research the UK sustainable packaging market from scratch. No files, no data — just a prompt and an AI with access to the internet. Claude can now search the web and cite its sources — every claim links back to a real article, report, or data source. That's what makes it usable for real business decisions. If you want to try this at home for free, Perplexity is another excellent tool that's specifically built for sourced research."
 
-**2. Paste the primary prompt in Perplexity Pro:**
+**2. Paste the primary prompt in Claude:**
 
 ```
-Conduct a comprehensive market research analysis of the UK sustainable packaging industry as of 2026. I need a structured report covering:
+Search the web and conduct a comprehensive market research analysis of the UK sustainable packaging industry as of 2026. I need a structured report covering:
 
 1. **Market Overview**: Current market size (£), growth rate (CAGR), and projected size by 2030. Break down by segment: biodegradable plastics, paper/cardboard alternatives, reusable packaging systems, and edible/dissolvable packaging.
 
@@ -333,7 +332,7 @@ Cite all statistics and claims with sources. Use the most recent data available.
 
 **3. While AI researches (~60–90 sec — this takes longer because it's searching the web), talk to audience:**
 
-> **AUDIENCE NOTE:** "This is going to take a bit longer than the others because it's actually searching the internet in real time — pulling from news articles, industry reports, company websites. Watch the sources it pulls in. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely."
+> **AUDIENCE NOTE:** "This is going to take a bit longer than the others because Claude is actually searching the internet in real time — pulling from news articles, industry reports, company websites. Watch the sources it pulls in. A junior analyst would spend a week gathering this. A research firm would charge five to ten thousand pounds. We're about to get a solid first pass in 90 seconds. Is it as deep as a McKinsey report? No. But is it 70-80% of the way there? Absolutely."
 
 **4. Show the output — scroll through, highlight the cited sources.**
 
@@ -389,7 +388,7 @@ Write a 250-word executive summary of this entire research, suitable for includi
 **⏱ Time: 7 minutes**
 
 ### Scenario
-Take a one-paragraph business idea and produce a complete 12-slide pitch deck with content, speaker notes, and actual designed slides — using AI for content and Gamma.app for design.
+Take a one-paragraph business idea and produce a complete 12-slide pitch deck with content, speaker notes, and actual designed slides — using Claude for content and Gamma.app for design.
 
 ### Tool
 **Claude** for pitch deck content (strong at structured, persuasive writing) → then **Gamma.app** to turn it into designed slides in one click.
@@ -493,7 +492,7 @@ Position these competitors: traditional government monitoring (DEFRA), BreezoMet
 
 ## Transition to Wrap-Up
 
-> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
+> **AUDIENCE NOTE:** "So let's step back. In about 35 minutes, we've done: financial analysis, contract drafting, brand identity, market research, and a pitch deck. Five things that would traditionally take a team of people days or weeks. And we did them all with one tool — Claude — plus Gamma for the slides at the end. The AI didn't do any of them perfectly — but it got us 70-80% of the way there in minutes. That last 20% is where your expertise, your judgement, your human skills come in. AI is the accelerator. You're still the driver."
 
 ---
 
@@ -628,10 +627,10 @@ and a commercial lead from Octopus Energy).
 
 | Use Case | Topic | Tool | Time |
 |----------|-------|------|------|
-| 1 | Financial Analysis | ChatGPT + Excel | 7 min |
+| 1 | Financial Analysis | Claude + Excel upload | 7 min |
 | 2 | Contract Drafting | Claude | 7 min |
-| 3 | Brand Identity | ChatGPT + DALL-E | 6 min |
-| 4 | Market Research | Perplexity Pro | 8 min |
+| 3 | Brand Identity | Claude (image generation) | 6 min |
+| 4 | Market Research | Claude (web search) | 8 min |
 | 5 | Pitch Deck | Claude + Gamma | 7 min |
 | — | **Total** | — | **~35 min** |
 
@@ -643,9 +642,9 @@ Things that might go wrong live:
 
 | Problem | Fix |
 |---------|-----|
-| ChatGPT is slow/down | Switch to Claude (have it open in another tab) |
-| DALL-E fails to generate | Have 2-3 pre-generated images saved as backup |
-| Perplexity is slow | Use ChatGPT with browsing, or have key stats noted |
+| Claude is slow/down | Have a backup ChatGPT or Gemini tab open (create free accounts beforehand) |
+| Image generation fails | Have 2-3 pre-generated images saved as backup. Or switch to a text-only brand guidelines demo |
+| Web search doesn't return good sources | Have key stats noted down beforehand. Or mention Perplexity as the alternative and show it |
 | Gamma.app doesn't load | Show the Claude markdown output and say "imagine this as slides" |
 | Any tool is completely down | Skip to the next use case, come back if time allows |
 | Internet goes down | Have all prompts saved locally. Show screenshots of expected outputs. |
