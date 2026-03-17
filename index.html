@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI in 2026 — The Landscape, The Tools, The Possibilities | Enriched Solutions</title>
+<style>
+  :root {
+    --bg: #0f1724;
+    --bg-card: #1a2332;
+    --bg-code: #0d1117;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent: #38bdf8;
+    --accent-dim: #1e6fa0;
+    --green: #4ade80;
+    --amber: #fbbf24;
+    --pink: #f472b6;
+    --border: #2d3a4d;
+    --speaker-bg: #1c2a3f;
+    --speaker-border: #38bdf8;
+    --audience-bg: #1f2d1f;
+    --audience-border: #4ade80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 18px;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #0f1724 0%, #162033 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+  }
+  .brand span { color: var(--text-muted); font-weight: 400; font-size: 0.85rem; display: block; }
+  nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+  nav a:hover, nav a.active { color: var(--accent); background: rgba(56,189,248,0.1); }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--accent), #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .hero .meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .talk-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .talk-link {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s;
+  }
+  .talk-link.primary { background: var(--accent); color: #0f1724; }
+  .talk-link.primary:hover { background: #7dd3fc; }
+  .talk-link.secondary { background: var(--bg-card); color: var(--accent); border: 1px solid var(--border); }
+  .talk-link.secondary:hover { border-color: var(--accent); background: rgba(56,189,248,0.08); }
+
+  /* Content sections */
+  section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  section:last-child { border-bottom: none; }
+  h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #f1f5f9;
+  }
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 28px 0 14px;
+    color: var(--accent);
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    color: #e2e8f0;
+  }
+  p { margin-bottom: 16px; }
+  ul, ol { margin: 12px 0 16px 24px; }
+  li { margin-bottom: 8px; }
+
+  /* Tables */
+  .table-wrap { overflow-x: auto; margin: 20px 0; border-radius: 10px; border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th {
+    background: var(--bg-card);
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--accent);
+    border-bottom: 2px solid var(--border);
+    white-space: nowrap;
+  }
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(56,189,248,0.04); }
+
+  /* Speaker notes */
+  .speaker-note {
+    background: var(--speaker-bg);
+    border-left: 4px solid var(--speaker-border);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #b8d4f0;
+  }
+  .speaker-note::before {
+    content: '🎤 Speaker Note';
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  /* Audience notes */
+  .audience-note {
+    background: var(--audience-bg);
+    border-left: 4px solid var(--audience-border);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin: 20px 0;
+    color: #b8f0c8;
+  }
+  .audience-note::before {
+    content: '📢 Audience Note';
+    display: block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  /* Code blocks with copy */
+  .code-block {
+    position: relative;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .code-block pre {
+    background: var(--bg-code);
+    padding: 24px;
+    padding-right: 60px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c9d1d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: inherit;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+  .copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .copy-btn.copied { color: var(--green); border-color: var(--green); }
+
+  /* Use case cards */
+  .use-case {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 20px 0;
+  }
+  .use-case h4 { margin-top: 0; color: var(--amber); }
+  .use-case .tool-badge {
+    display: inline-block;
+    background: rgba(56,189,248,0.12);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  /* Cheat sheet cards */
+  .cheat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 12px 0;
+  }
+  .cheat-card strong { color: var(--accent); }
+
+  /* Key concept box */
+  .key-concept {
+    background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(129,140,248,0.08));
+    border: 1px solid var(--accent-dim);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 28px 0;
+    text-align: center;
+  }
+  .key-concept h3 { color: #f1f5f9; font-size: 1.5rem; margin-top: 0; }
+
+  /* Footer */
+  footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  footer .tagline {
+    font-style: italic;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Slide number badges */
+  .slide-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: #0f1724;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .slide-header { display: flex; align-items: center; margin-bottom: 16px; }
+  .slide-header h2 { margin-bottom: 0; }
+
+  /* Optional mention */
+  .optional {
+    background: rgba(251,191,36,0.1);
+    border: 1px solid rgba(251,191,36,0.3);
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    color: var(--amber);
+    margin: 16px 0;
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .container { padding: 0 16px; }
+    .hero { padding: 48px 0 36px; }
+    section { padding: 32px 0; }
+    th, td { padding: 10px 12px; font-size: 0.85rem; }
+    .code-block pre { padding: 16px; padding-right: 50px; font-size: 0.85rem; }
+    .use-case { padding: 20px; }
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="brand">Enriched Solutions<span>You cannot change the wind, but working together, we can adjust the sails</span></div>
+    <nav>
+      <a href="index.html" class="active">Talk 1: Overview</a>
+      <a href="workshop.html">Talk 2: Workshop</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>AI in 2026: What You Need to Know in 10 Minutes</h1>
+    <p class="subtitle">The Landscape, The Tools, The Possibilities — a non-technical guide to AI for business professionals</p>
+    <div class="meta">
+      <span>⏱ 5–10 minutes</span>
+      <span>👤 Presenter: Ali</span>
+      <span>🎯 Non-technical audience</span>
+    </div>
+    <div class="talk-links">
+      <a href="#slide-1" class="talk-link primary">Start Reading ↓</a>
+      <a href="workshop.html" class="talk-link secondary">Go to Workshop →</a>
+    </div>
+  </div>
+
+  <!-- SLIDE 1 -->
+  <section id="slide-1">
+    <div class="slide-header">
+      <span class="slide-num">1</span>
+      <h2>AI in 2026: What You Need to Know in 10 Minutes</h2>
+    </div>
+    <p style="font-size:1.1rem; color:var(--text-muted);">Enriched Solutions</p>
+    <div class="speaker-note">
+      Before we get into the hands-on stuff, I want to give everyone the same starting point. Whether you've been using ChatGPT daily or you've never touched it — by the end of this, you'll know who the players are, what the tools do, and what's actually possible for your business right now.
+    </div>
+  </section>
+
+  <!-- SLIDE 2 -->
+  <section id="slide-2">
+    <div class="slide-header">
+      <span class="slide-num">2</span>
+      <h2>The AI Landscape: Who's Who</h2>
+    </div>
+    <div class="speaker-note">
+      Think of it like smartphones. There are a few big companies, each makes their own 'brain' — we call those models — and then there are apps where you actually use them. Here's the map.
+    </div>
+
+    <h3>Company → Model → Where You Use It</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Company</th><th>What They Do</th><th>Their AI "Brain" (Model)</th><th>Where You Use It</th><th>Known For</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>OpenAI</strong></td>
+            <td>The company that started the current AI wave</td>
+            <td>GPT-4o, GPT-5, o3</td>
+            <td><strong>ChatGPT</strong> (web, mobile, desktop)</td>
+            <td>The household name. Best all-rounder. Also does image generation (DALL·E)</td>
+          </tr>
+          <tr>
+            <td><strong>Google DeepMind</strong></td>
+            <td>Google's AI division</td>
+            <td>Gemini 2.5, Gemini 3</td>
+            <td><strong>Gemini app</strong>, Google AI Studio, baked into Gmail/Docs/Sheets</td>
+            <td>Deeply integrated into Google products you already use</td>
+          </tr>
+          <tr>
+            <td><strong>Anthropic</strong></td>
+            <td>AI safety-focused company</td>
+            <td>Claude Opus 4, Claude Sonnet 4</td>
+            <td><strong>claude.ai</strong> (web, mobile), API</td>
+            <td>Excellent at long documents, analysis, and careful reasoning</td>
+          </tr>
+          <tr>
+            <td><strong>Meta</strong></td>
+            <td>Facebook/Instagram parent</td>
+            <td>Llama 4 (open-source)</td>
+            <td>Available through many apps and platforms</td>
+            <td>Free and open — anyone can build with it</td>
+          </tr>
+          <tr>
+            <td><strong>xAI</strong></td>
+            <td>Elon Musk's AI company</td>
+            <td>Grok 3</td>
+            <td>Built into <strong>X</strong> (Twitter), standalone app</td>
+            <td>Real-time information, integrated into social media</td>
+          </tr>
+          <tr>
+            <td><strong>Perplexity</strong></td>
+            <td>AI-powered search engine</td>
+            <td>Uses multiple models</td>
+            <td><strong>perplexity.ai</strong> (web, mobile)</td>
+            <td>Search with sources — like Google but gives you answers, not links</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="speaker-note">
+      Don't worry about memorising this. The key takeaway: there are about 5–6 serious players right now. They all do similar things, they all have free tiers you can try tonight, and the differences are honestly shrinking. If you only try one — start with ChatGPT or Claude.
+    </div>
+
+    <div class="optional">
+      <strong>Optional mention:</strong> Mistral (French company, strong in Europe, good for multilingual work)
+    </div>
+  </section>
+
+  <!-- SLIDE 3 -->
+  <section id="slide-3">
+    <div class="slide-header">
+      <span class="slide-num">3</span>
+      <h2>The Coding Tools Layer</h2>
+    </div>
+    <div class="speaker-note">
+      Now, this next bit is for anyone who works with developers, manages tech teams, or is just curious about where the real productivity gains are happening. On top of these AI models, there's a whole layer of tools built specifically for writing and managing code.
+    </div>
+
+    <h3>Key Concept: These tools USE the models above — they just wrap them in a developer workflow.</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tool</th><th>What It Is</th><th>How It Works</th><th>Who It's For</th><th>Why It Matters</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>GitHub Copilot</strong></td>
+            <td>AI pair programmer</td>
+            <td>Sits inside your code editor and suggests code as you type, like autocomplete on steroids</td>
+            <td>Any developer</td>
+            <td>Most widely adopted — millions of devs use it daily</td>
+          </tr>
+          <tr>
+            <td><strong>Cursor</strong></td>
+            <td>AI-native code editor</td>
+            <td>A code editor rebuilt from scratch with AI at its core — you describe what you want, it writes it</td>
+            <td>Developers who want AI-first workflow</td>
+            <td>The editor that made the industry rethink how code gets written</td>
+          </tr>
+          <tr>
+            <td><strong>Claude Code</strong></td>
+            <td>Anthropic's coding agent</td>
+            <td>A command-line tool that can read your entire codebase, plan changes, and execute them autonomously</td>
+            <td>Developers working on complex projects</td>
+            <td>Can handle entire features, not just single lines</td>
+          </tr>
+          <tr>
+            <td><strong>OpenAI Codex</strong></td>
+            <td>OpenAI's coding agent</td>
+            <td>A CLI tool that takes a task description and works through it step-by-step, writing and testing code</td>
+            <td>Developers wanting autonomous task completion</td>
+            <td>Cloud-based — spins up its own environment to work in</td>
+          </tr>
+          <tr>
+            <td><strong>Windsurf</strong></td>
+            <td>AI-powered code editor</td>
+            <td>Similar to Cursor — an editor with deep AI integration for writing, editing, and understanding code</td>
+            <td>Developers wanting an alternative to Cursor</td>
+            <td>Strong free tier, fast iteration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="speaker-note">
+      Why am I telling non-developers about dev tools? Because this is where the biggest productivity multiplier is right now. A single developer with these tools can do the work that used to take a small team. If you're running a business, that changes your cost model completely. And some of these tools are becoming accessible to non-developers too — you describe what you want in plain English, and the AI builds it.
+    </div>
+  </section>
+
+  <!-- SLIDE 4 -->
+  <section id="slide-4">
+    <div class="slide-header">
+      <span class="slide-num">4</span>
+      <h2>The Key Concept</h2>
+    </div>
+
+    <div class="key-concept">
+      <h3>Models are the engine. Tools are the car.</h3>
+      <ul style="text-align:left; list-style:none; margin:20px auto; max-width:640px;">
+        <li style="margin-bottom:12px;">🧠 The <strong>model</strong> (GPT-5, Claude, Gemini) is the intelligence — it understands language, reasons, generates</li>
+        <li style="margin-bottom:12px;">🚗 The <strong>tool</strong> (ChatGPT, Cursor, Copilot) is how you interact with that intelligence for a specific job</li>
+        <li style="margin-bottom:12px;">🔄 Many tools let you swap models — like choosing which engine goes in your car</li>
+        <li>🔑 You don't need to understand engines to drive. Same here.</li>
+      </ul>
+    </div>
+
+    <div class="speaker-note">
+      This is the only technical concept I want you to take away. When someone says 'I used ChatGPT' — ChatGPT is the tool, GPT is the model inside it. When someone says 'I used Cursor with Claude' — Cursor is the tool, Claude is the model. That's it. You now understand the entire architecture.
+    </div>
+  </section>
+
+  <!-- SLIDE 5 -->
+  <section id="slide-5">
+    <div class="slide-header">
+      <span class="slide-num">5</span>
+      <h2>Five Things You're About to See Me Do Live</h2>
+    </div>
+    <div class="speaker-note">
+      Alright, enough theory. Here are five real business tasks I'm going to do live in the next session — no pre-prepared demos, no tricks. Just me, an AI tool, and a business problem.
+    </div>
+
+    <div class="use-case">
+      <h4>1. 📊 Turn Messy Financials into an Executive Summary</h4>
+      <span class="tool-badge">ChatGPT — Advanced Data Analysis</span>
+      <ul>
+        <li><strong>The task:</strong> Take a raw, unformatted Excel spreadsheet of company financials and ask AI to clean it up, calculate key financial ratios (profit margin, burn rate, runway), and produce a board-ready executive summary</li>
+        <li><strong>Why it's impressive:</strong> This normally takes a financial analyst 2–3 hours. We'll do it in under 5 minutes.</li>
+        <li><strong>What you'll see:</strong> Messy spreadsheet in → clean summary with charts out</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4>2. 📝 Draft a Professional Services Contract from a Brief</h4>
+      <span class="tool-badge">Claude (claude.ai)</span>
+      <ul>
+        <li><strong>The task:</strong> Given a one-paragraph description of a consulting engagement, generate a full professional services agreement — proper legal structure, payment terms, IP clauses, limitation of liability — then refine specific clauses in real-time</li>
+        <li><strong>Why it's impressive:</strong> This is a £500–£2,000 job from a solicitor for a first draft. AI gets you 80% there in 2 minutes.</li>
+        <li><strong>What you'll see:</strong> One-paragraph brief in → multi-page contract out → live clause refinement</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4>3. 🎨 Create a Brand Identity from Scratch</h4>
+      <span class="tool-badge">ChatGPT (DALL·E) + Claude</span>
+      <ul>
+        <li><strong>The task:</strong> Invent a fictional business on the spot, then generate a logo, colour palette, brand guidelines, and tone of voice document</li>
+        <li><strong>Why it's impressive:</strong> A branding agency charges £5,000–£15,000 for this. We'll have a working first draft in minutes.</li>
+        <li><strong>What you'll see:</strong> Business idea → logo options → full brand guidelines document</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4>4. 🔍 Deep-Dive Market Research with Sources</h4>
+      <span class="tool-badge">Perplexity + Claude</span>
+      <ul>
+        <li><strong>The task:</strong> Pick a market and ask AI to produce a structured competitive analysis — market size, key players, trends, threats, opportunities — with actual sources you can verify</li>
+        <li><strong>Why it's impressive:</strong> This is a week-long consulting engagement compressed into minutes. The sources are real, clickable, and verifiable.</li>
+        <li><strong>What you'll see:</strong> Market question → structured research report with citations</li>
+      </ul>
+    </div>
+
+    <div class="use-case">
+      <h4>5. 🚀 Build an Investor Pitch Deck from a Napkin Idea</h4>
+      <span class="tool-badge">ChatGPT or Claude → Slides</span>
+      <ul>
+        <li><strong>The task:</strong> Starting from a one-line business idea, produce a complete investor pitch deck — problem, solution, market size, business model, team slide, financial projections, the ask</li>
+        <li><strong>Why it's impressive:</strong> Founders spend weeks on pitch decks. We'll have a solid first draft in minutes.</li>
+        <li><strong>What you'll see:</strong> One-line idea → complete pitch deck with 10–12 slides</li>
+      </ul>
+    </div>
+
+    <div class="speaker-note">
+      Five real tasks. No magic, no pre-prepared answers. Just AI tools that are available to every single person in this room — most of them free. Ready to see it happen? Let's go.
+    </div>
+
+    <div class="talk-links" style="margin-top:32px;">
+      <a href="workshop.html" class="talk-link primary">Continue to Live Workshop →</a>
+    </div>
+  </section>
+
+  <!-- PRESENTER CHEAT SHEET -->
+  <section id="cheat-sheet">
+    <h2>Presenter Cheat Sheet</h2>
+
+    <div class="cheat-card">
+      <h4>💬 "Which one should I use?"</h4>
+      <ul>
+        <li>For general tasks: <strong>ChatGPT</strong> (easiest to start, best all-rounder)</li>
+        <li>For long documents/analysis: <strong>Claude</strong> (handles large files, careful reasoning)</li>
+        <li>For research with sources: <strong>Perplexity</strong> (gives citations)</li>
+        <li>For anything in Google Workspace: <strong>Gemini</strong> (already built in)</li>
+      </ul>
+    </div>
+
+    <div class="cheat-card">
+      <h4>💰 "Is it free?"</h4>
+      <ul>
+        <li>ChatGPT: Free tier available, paid ~£20/month for full power</li>
+        <li>Claude: Free tier available, paid ~£18/month</li>
+        <li>Gemini: Free in Google products, paid tier for advanced features</li>
+        <li>Perplexity: Free with limits, Pro ~£17/month</li>
+      </ul>
+    </div>
+
+    <div class="cheat-card">
+      <h4>🔒 "Is it safe / will it steal my data?"</h4>
+      <ul>
+        <li>All major providers have enterprise tiers where data isn't used for training</li>
+        <li>For sensitive business data: use paid tiers, check the data policy</li>
+        <li>Rule of thumb: don't put anything into a free AI tool that you wouldn't email to a stranger</li>
+        <li>Paid tiers generally have stronger privacy guarantees</li>
+      </ul>
+    </div>
+
+    <div class="cheat-card">
+      <h4>🤖 "Will it replace my job?"</h4>
+      <p><em>"AI won't replace you. But someone using AI might. That's why we're here tonight."</em></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p class="tagline">"You cannot change the wind, but working together, we can adjust the sails"</p>
+    <p><strong>Enriched Solutions</strong> — Prepared by Ark Medicea, COO</p>
+  </div>
+</footer>
+
+<script>
+function copyToClipboard(btn) {
+  const pre = btn.parentElement.querySelector('pre');
+  const text = pre.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓ Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
+
+</body>
+</html>
